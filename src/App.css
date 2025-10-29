@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand-VariableFont_wght.ttf') format('woff2');
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+  --pink-strong: #FF8C8C;
+  --pink-light: #FFBDBD;
+  --aqua-light: #C7EBF0;
+  --sage-green: #BACDB0;
+  --white-soft: #FEFDF8;
+}
