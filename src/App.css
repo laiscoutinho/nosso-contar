@@ -7,12 +7,25 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
+  background: var(--aqua-light);
+  padding: 0 15px;
 }
 
 :root {
   --pink-strong: #FF8C8C;
   --pink-light: #FFBDBD;
+  --blue-light: #BADFDB;
   --aqua-light: #C7EBF0;
   --sage-green: #BACDB0;
   --white-soft: #FEFDF8;
+}
+
+.text-glow {
+  text-shadow: 0 0 8px var(--pink-strong);
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 25px;
+  }
 }
