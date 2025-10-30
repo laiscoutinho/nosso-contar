@@ -7,12 +7,38 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
+  background: var(--aqua-light);
 }
 
 :root {
   --pink-strong: #FF8C8C;
   --pink-light: #FFBDBD;
+  --blue-light: #BADFDB;
   --aqua-light: #C7EBF0;
   --sage-green: #BACDB0;
   --white-soft: #FEFDF8;
+}
+
+.layout-margin {
+  margin: 0 15px;
+}
+
+.layout-padding {
+  padding-left: calc(2.5rem + 15px);
+  padding-right: calc(2.5rem + 15px);
+}
+
+.text-glow {
+  text-shadow: 0 0 8px var(--pink-strong);
+}
+
+@media (min-width: 768px) {
+  .layout-margin {
+    margin: 0 25px;
+  }
+
+  .layout-padding {
+    padding-left: 0 calc(2.5rem + 25px);
+    padding-right: 0 calc(2.5rem + 25px);
+  }
 }
