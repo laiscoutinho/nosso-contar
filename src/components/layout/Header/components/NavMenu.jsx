@@ -11,7 +11,7 @@ export default function NavMenuHeader({ routes, isHovered = true, isMobile = fal
         if (route.divider) return <div key={`divider-${idx}`} className="w-px h-6 bg-white/40" />;
         if (route.visible === false) return null;
 
-        const isActive = route.path && location.pathname.startsWith(route.path);
+        const isActive = route.path && location.pathname === route.path;
 
         return (
           <button
