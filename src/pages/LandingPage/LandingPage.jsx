@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { Hand, MapPlus, BookA, HeartHandshake } from "lucide-react";
 
-import children from "../../assets/decor/children.png";
-import logo from "../../assets/logo/logo_Nosso_Contar.png";
+import Children from "../../assets/decor/children.png";
+import Logo from "../../assets/logo/logo_Nosso_Contar.png";
 import TitleWithHands from "../../assets/decor/titleWithHands.png";
 import TitleAbout from "../../assets/decor/titleAbout.png"
-import GirlWithHands from "../../assets/decor/GirlWithHands.png"
+import GirlWithHands from "../../assets/decor/girlWithHands.png"
 
 import Button from "../../components/Button/Button"
 import WaveBackground from "../../components/WaveBackground/WaveBackground";
@@ -16,11 +16,11 @@ export default function LandingPage() {
 
   return (
     <>
-      <section className="relative h-auto ml:h-[80vh] mb-0 px-6 md:px-10 py-12 bg-[var(--white-soft)] text-center rounded-bl-[50px] rounded-br-[50px] flex flex-col md:flex-row items-center justify-center gap-7 md:gap-10 layout-margin overflow-hidden">
+      <section className="relative h-auto ml:h-[80vh] mb-0 px-6 md:px-10 py-12 bg-(--white-soft) text-center rounded-bl-[50px] rounded-br-[50px] flex flex-col md:flex-row items-center justify-center gap-7 md:gap-10 layout-margin overflow-hidden">
         {/* Imagem das crianças */}
         <div className="flex-1 flex items-center justify-center z-10 mb-8 md:mb-0">
           <img
-            src={children}
+            src={Children}
             alt="Crianças brincando"
             className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] select-none"
           />
@@ -29,14 +29,14 @@ export default function LandingPage() {
         {/* Texto e logo */}
         <div className="flex-1 flex flex-col items-center text-center md:text-left z-10 gap-5">
           <img
-            src={logo}
+            src={Logo}
             alt="Logo Nosso Contar"
             className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] mb-4 sm:mb-6 select-none"
           />
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-800 max-w-md font-medium">
-            <span className="text-[var(--pink-strong)]">Trilhas</span> divertidas, letras que
-            ganham vida e <span className="text-[var(--pink-strong)]">histórias</span> cheias
+            <span className="text-(--pink-strong)">Trilhas</span> divertidas, letras que
+            ganham vida e <span className="text-(--pink-strong)">histórias</span> cheias
             de sinais.
           </p>
 
@@ -63,17 +63,17 @@ export default function LandingPage() {
             <LearningCard
               title="Trilhas de Palavras"
               text="Aprenda sinais do dia a dia brincando com palavras divertidas."
-              icon={<MapPlus className="w-6 h-6 text-[var(--pink-strong)]" />}
+              icon={<MapPlus className="w-6 h-6 text-(--pink-strong)" />}
             />
             <LearningCard
               title="Alfabeto e Números"
               text="Descubra como cada letra e número ganha vida nas mãos."
-              icon={<BookA className="w-6 h-6 text-[var(--pink-strong)]" />}
+              icon={<BookA className="w-6 h-6 text-(--pink-strong)" />}
             />
             <LearningCard
               title="Histórias que Encantam"
               text="Histórias mágicas para aprender sinais de forma divertida."
-              icon={<HeartHandshake className="w-6 h-6 text-[var(--pink-strong)]" />}
+              icon={<HeartHandshake className="w-6 h-6 text-(--pink-strong)" />}
             />
           </div>
         </section>
@@ -97,15 +97,15 @@ export default function LandingPage() {
             />
 
             <p className="text-base font-medium sm:text-lg md:text-xl leading-relaxed">
-              O <span className="text-[var(--pink-strong)] font-semibold">Nosso Contar</span> nasceu na disciplina de Libras do curso de Ciência da Computação do IFCE, onde recebemos o desafio de criar um sistema educativo em Libras.
+              O <span className="text-(--pink-strong) font-semibold">Nosso Contar</span> nasceu na disciplina de Libras do curso de Ciência da Computação do IFCE, onde recebemos o desafio de criar um sistema educativo em Libras.
 
               <br /><br />
 
-              Observamos que muitas crianças encontram dificuldades na <span className="text-[var(--pink-strong)] font-semibold">alfabetização em Libras</span>, e que o mundo ainda é pouco inclusivo.
+              Observamos que muitas crianças encontram dificuldades na <span className="text-(--pink-strong) font-semibold">alfabetização em Libras</span>, e que o mundo ainda é pouco inclusivo.
 
               <br /><br />
 
-              Por isso, desenvolvemos o <span className="text-[var(--pink-strong)] font-semibold">Nosso Contar</span>: uma plataforma <span className="text-[var(--pink-strong)] font-semibold">lúdica e acessível que ensina sinais por meio de vídeos interativos, trilhas de aprendizado</span> com palavras do universo infantil, alfabeto, números e histórias contadas em Libras, acompanhadas de textos e imagens descritivas para facilitar a assimilação.
+              Por isso, desenvolvemos o <span className="text-(--pink-strong) font-semibold">Nosso Contar</span>: uma plataforma <span className="text-(--pink-strong) font-semibold">lúdica e acessível que ensina sinais por meio de vídeos interativos, trilhas de aprendizado</span> com palavras do universo infantil, alfabeto, números e histórias contadas em Libras, acompanhadas de textos e imagens descritivas para facilitar a assimilação.
             </p>
           </div>
         </section>

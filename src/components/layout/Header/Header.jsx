@@ -13,7 +13,7 @@ export default function Header({ routes }) {
       </div>
 
       {/* BOTÃO HAMBURGUER MOBILE */}
-      <div className="lg:hidden cursor-pointer z-[60]" onClick={toggleMenu}>
+      <div className="lg:hidden cursor-pointer z-60" onClick={toggleMenu}>
         <svg viewBox="0 0 60 40" className="w-8 h-8">
           <g stroke="var(--pink-strong)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
             <path
@@ -26,7 +26,7 @@ export default function Header({ routes }) {
             />
             <path
               d="M10,30 L50,30"
-              className={`transition-all duration-300 origin-center ${menuVisible ? '-translate-y-[10px] -rotate-45' : ''}`}
+              className={`transition-all duration-300 origin-center ${menuVisible ? '-translate-y-2.5 -rotate-45' : ''}`}
             />
           </g>
         </svg>

@@ -1,8 +1,13 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Quicksand';
   src: url('./assets/fonts/Quicksand-VariableFont_wght.ttf') format('woff2');
+}
+
+header {
+  font-family: 'Palanquin', sans-serif;
 }
 
 body {
