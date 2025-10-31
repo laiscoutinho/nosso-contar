@@ -32,6 +32,41 @@ body {
   text-shadow: 0 0 8px var(--pink-strong);
 }
 
+/* Animação da mão dando tchau */
+.wave-on-hover {
+  display: inline-block; 
+  transition: transform 0.2s;
+}
+
+.button-hover:hover .wave-on-hover {
+  animation: wave 0.8s ease-in-out;
+}
+
+@keyframes wave {
+  0%   { transform: rotate(0deg) translateX(0); }
+  15%  { transform: rotate(14deg) translateX(2px); }
+  30%  { transform: rotate(-8deg) translateX(-2px); }
+  45%  { transform: rotate(14deg) translateX(2px); }
+  60%  { transform: rotate(-4deg) translateX(-2px); }
+  75%  { transform: rotate(10deg) translateX(2px); }
+  100% { transform: rotate(0deg) translateX(0); }
+}
+
+
+/* Animação das letras se movendo */
+@keyframes wave-scroll {
+  from { background-position-x: 0; }
+  to   { background-position-x: 1000px; }
+}
+
+.wave-bg {
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: bottom;
+  animation: wave-scroll 12s linear infinite;
+  will-change: background-position-x;
+}
+
 @media (min-width: 768px) {
   .layout-margin {
     margin: 0 25px;
