@@ -1,6 +1,6 @@
 import React from 'react';
+import { Ear } from "lucide-react";
 import logo from '../../../assets/logo/logo_Nosso_Contar_wide_branco.png';
-import ear from '../../../assets/icons/ear.png'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -15,7 +15,7 @@ export default function Footer() {
       </a>
       <span className="w-full md:w-auto text-center md:text-right inline-flex items-center justify-center md:justify-end gap-2 select-none">
         Copyright © {currentYear} Nosso Contar | Desenvolvido com carinho.
-        <img src={ear} className="h-4 w-4 md:h-5 md:w-5 select-none" alt="Orelha" />
+        <Ear className="h-4 w-4 md:h-5 md:w-5 select-none" />
       </span>
     </footer>
   );
