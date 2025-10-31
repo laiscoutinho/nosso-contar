@@ -32,17 +32,17 @@ export default function Header({ routes }) {
         </svg>
       </div>
 
-        {/* MENU DESKTOP */}
-        <nav className="hidden lg:flex lg:flex-row lg:items-center lg:gap-6">
-            <NavMenuHeader routes={routes} isHovered={true} />
-        </nav>
+      {/* MENU DESKTOP */}
+      <nav className="hidden lg:flex lg:flex-row lg:items-center lg:gap-6">
+        <NavMenuHeader routes={routes} isHovered={true} />
+      </nav>
 
-        {/* MENU MOBILE */}
-        {menuVisible && (
-            <nav className="flex flex-col gap-4 bg-(--white-soft) absolute top-25 right-0 px-6 py-6 w-64 z-40 shadow-lg rounded-bl-xl lg:hidden">
-            <NavMenuHeader routes={routes} isHovered={true} isMobile={true} />
-            </nav>
-        )}
+      {/* MENU MOBILE */}
+      {menuVisible && (
+        <nav className="flex flex-col gap-4 bg-(--white-soft) absolute top-25 right-0 px-6 py-6 w-64 z-40 shadow-lg rounded-bl-xl lg:hidden">
+          <NavMenuHeader routes={routes} isHovered={true} isMobile={true} />
+        </nav>
+      )}
     </header>
   );
 }
