@@ -1,16 +1,79 @@
-# React + Vite
+# ![Nosso Contar](./src//assets/logo/logo_Nosso_Contar_wide.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Entre em um mundo de gestos, histórias e descobertas em Libras.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Sobre o Projeto
 
-## React Compiler
+O **Nosso Contar** nasceu na disciplina de **Libras** do curso de **Ciência da Computação do IFCE**, a partir do desafio de criar um **sistema educativo inclusivo** voltado à aprendizagem em Libras.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Durante o desenvolvimento, observamos que muitas crianças surdas enfrentam dificuldades na alfabetização visual e gestual, e que o mundo digital ainda carece de ferramentas acessíveis e atrativas.
 
-## Expanding the ESLint configuration
+Dessa percepção surgiu o **Nosso Contar**: uma plataforma **lúdica, acessível e interativa** que ensina Libras por meio de **vídeos educativos, trilhas de aprendizado, histórias infantis e jogos de memória**, promovendo o aprendizado de forma envolvente e significativa.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Objetivo
+
+Promover a **alfabetização bilíngue** em Libras para crianças, utilizando **recursos visuais e interativos** que estimulem a curiosidade, a imaginação e a inclusão digital.
+
+---
+
+## 🚀 Funcionalidades
+
+### 🧩 Trilhas de Aprendizagem
+
+* Módulos com **palavras do cotidiano**, **alfabeto** e **números**.
+* Vídeos em Libras com legendas em português.
+* Estrutura gamificada que acompanha o progresso do usuário.
+
+### 📚 Histórias Infantis
+
+* Contos narrados em Libras, e com **legendas**.
+* Abordam **emoções, valores e vocabulário funcional** (como dias da semana, família e sentimentos).
+* Integram o aprendizado de forma contextualizada e encantadora.
+
+---
+
+## 🧠 Público-Alvo
+
+Crianças surdas em processo de alfabetização, estudantes ouvintes interessados em aprender Libras, e educadores que buscam ferramentas inclusivas para o ensino bilíngue.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Categoria              | Tecnologias                                   |
+| ---------------------- | --------------------------------------------- |
+| **Frontend**           | React, TailwindCSS, LucideReact               |
+| **Design e Protótipo** | Figma                                         |
+| **Versionamento**      | Git e GitHub                                  |
+
+---
+
+## 🌍 Impacto
+
+O **Nosso Contar** vai além do ensino de sinais — ele cria **pontes entre mundos**, incentivando o respeito, a empatia e a acessibilidade.
+É um convite para que o aprendizado em Libras seja não apenas educativo, mas também **emocional e inclusivo**.
+
+---
+
+## 👩‍💻 Equipe
+
+Projeto desenvolvido por estudantes do **Instituto Federal do Ceará (IFCE)**, como parte da disciplina de **Libras**, unindo tecnologia, criatividade e propósito social.
+
+Integrantes:
+- [Cláudia Ferreira](https://github.com/claudia-souza)
+- [Laís Coutinho](https://github.com/laiscoutinho)
+- [Rosana Celine](https://github.com/RosanaCeline)
+- [Thais Araujo](https://github.com/thaisaraujo19)
+- [Thalyta Lima](https://github.com/thalytalima211)
+
+---
+
+## 📎 Licença
+
+Este projeto é de uso acadêmico e educativo. Todos os direitos reservados às autoras.
+
+---
