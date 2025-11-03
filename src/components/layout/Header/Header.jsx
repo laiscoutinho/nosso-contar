@@ -8,12 +8,12 @@ export default function Header({ routes }) {
 
   return (
     <header className="relative top-0 left-0 h-25 bg-(--white-soft) text-pink-strong z-50 px-10 flex items-center justify-between layout-margin">
-      <div className="flex items-center gap-4">
-        <img src={logo} alt="Logo Nosso contar" className="w-auto max-w-40 md:max-w-60" />
+      <div className="flex items-center">
+        <img src={logo} alt="Logo Nosso contar" className="w-auto max-w-40 md:max-w-60 select-none" />
       </div>
 
       {/* BOTÃO HAMBURGUER MOBILE */}
-      <div className="lg:hidden cursor-pointer z-[60]" onClick={toggleMenu}>
+      <div className="lg:hidden cursor-pointer z-60" onClick={toggleMenu}>
         <svg viewBox="0 0 60 40" className="w-8 h-8">
           <g stroke="var(--pink-strong)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
             <path
@@ -26,23 +26,23 @@ export default function Header({ routes }) {
             />
             <path
               d="M10,30 L50,30"
-              className={`transition-all duration-300 origin-center ${menuVisible ? '-translate-y-[10px] -rotate-45' : ''}`}
+              className={`transition-all duration-300 origin-center ${menuVisible ? '-translate-y-2.5 -rotate-45' : ''}`}
             />
           </g>
         </svg>
       </div>
 
-        {/* MENU DESKTOP */}
-        <nav className="hidden lg:flex lg:flex-row lg:items-center lg:gap-6">
-            <NavMenuHeader routes={routes} isHovered={true} />
-        </nav>
+      {/* MENU DESKTOP */}
+      <nav className="hidden lg:flex lg:flex-row lg:items-center lg:gap-6">
+        <NavMenuHeader routes={routes} isHovered={true} />
+      </nav>
 
-        {/* MENU MOBILE */}
-        {menuVisible && (
-            <nav className="flex flex-col gap-4 bg-(--white-soft) absolute top-25 right-0 px-6 py-6 w-64 z-40 shadow-lg rounded-bl-xl lg:hidden">
-            <NavMenuHeader routes={routes} isHovered={true} isMobile={true} />
-            </nav>
-        )}
+      {/* MENU MOBILE */}
+      {menuVisible && (
+        <nav className="flex flex-col gap-4 bg-(--white-soft) absolute top-25 right-0 px-6 py-6 w-64 z-40 shadow-lg rounded-bl-xl lg:hidden">
+          <NavMenuHeader routes={routes} isHovered={true} isMobile={true} />
+        </nav>
+      )}
     </header>
   );
 }
