@@ -85,15 +85,15 @@ export default function LandingPage() {
             className="w-[320px] md:w-[500px] lg:w-[600px] max-w-full select-none transform md:-translate-x-5"
           />
 
-          <h2 className="self-start text-2xl sm:text-3xl md:text-3xl px-6 md:px-10 font-bold mt-8 mb-4 max-w-3xl">
+          <h2 className="self-start text-base sm:text-xl md:text-2xl px-6 md:px-10 font-bold mt-8 mb-4 max-w-3xl">
             Por que criamos o Nosso Contar?
           </h2>
 
-          <div className="flex flex-col md:flex-row items-start gap-6 layout-margin mt-4">
+          <div className="flex flex-col lg:flex-row items-center gap-8 layout-margin mt-4">
             <img
               src={GirlWithHands}
               alt="Decoração"
-              className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] select-none"
+              className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px] select-none"
             />
 
             <p className="text-base font-medium sm:text-lg md:text-xl leading-relaxed">
