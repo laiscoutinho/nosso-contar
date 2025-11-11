@@ -6,17 +6,32 @@ import Logo from "../../assets/logo/logo_Nosso_Contar.png";
 import TitleWithHands from "../../assets/decor/titleWithHands.png";
 import TitleAbout from "../../assets/decor/titleAbout.png"
 import GirlWithHands from "../../assets/decor/girlWithHands.png"
+import TitleEnding from "../../assets/decor/titleEnding.png";
+import Claudia from "../../assets/team/claudia.jpg";
+import Lais from "../../assets/team/lais.jpg";
+import Rosana from "../../assets/team/rosana.jpg";
+import Thais from "../../assets/team/thais.jpg";
+import Thalyta from "../../assets/team/thalyta.jpg";
 
 import Button from "../../components/Button/Button"
 import WaveBackground from "../../components/WaveBackground/WaveBackground";
 import LearningCard from "../../components/LearningCard/LearningCard";
+import TeamMemberCard from "../../components/TeamMemberCard/TeamMemberCard";
+
+const members = [
+  { avatar: Claudia, name: "Claudia Ferreira", role: "Vídeos & Frontend" },
+  { avatar: Lais, name: "Laís Coutinho", role: "UI/UX & Frontend" },
+  { avatar: Rosana, name: "Rosana Celine", role: "Frontend & Backend" },
+  { avatar: Thais, name: "Thaís Araújo", role: "Vídeos & Frontend" },
+  { avatar: Thalyta, name: "Thalyta Lima", role: "Edição de Histórias & Frontend" },
+];
 
 export default function LandingPage() {
   const navigate = useNavigate();
 
   return (
     <>
-      <section className="relative h-auto ml:h-[80vh] mb-0 px-6 md:px-10 py-12 bg-(--white-soft) text-center rounded-bl-[50px] rounded-br-[50px] flex flex-col md:flex-row items-center justify-center gap-7 md:gap-10 layout-margin overflow-hidden">
+      <main className="relative h-auto ml:h-[80vh] mb-0 px-6 md:px-10 py-12 bg-(--white-soft) text-center rounded-bl-[50px] rounded-br-[50px] flex flex-col md:flex-row items-center justify-center gap-7 md:gap-10 layout-margin overflow-hidden">
         {/* Imagem das crianças */}
         <div className="flex-1 flex items-center justify-center z-10 mb-8 md:mb-0">
           <img
@@ -47,7 +62,7 @@ export default function LandingPage() {
             Ver histórias
           </Button>
         </div>
-      </section>
+      </main>
 
       <WaveBackground offset="-mt-[40px]" />
 
@@ -110,6 +125,56 @@ export default function LandingPage() {
           </div>
         </section>
       </div>
+
+      <div className="bg-(--white-soft)">
+        <section className="flex flex-col items-start px-6 md:px-10 py-18">
+          <h2 className="text-base sm:text-xl md:text-2xl font-bold mb-4">
+            Quem trouxe o Nosso Contar à vida
+          </h2>
+
+          <div className="w-full flex justify-center">
+            <p className="text-base font-medium sm:text-lg md:text-xl leading-relaxed max-w-[650px] text-center">
+              Uma equipe de estudantes de Computação unida pela missão de tornar o aprendizado de Libras divertido, inclusivo e acessível a todas as crianças.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center mt-8 max-w-6xl mx-auto gap-y-14">
+            {/* Primeira linha: 3 cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-14 justify-items-center w-full">
+              {members.slice(0, 3).map((member) => (
+                <TeamMemberCard
+                  key={member.name}
+                  avatar={member.avatar}
+                  name={member.name}
+                  role={member.role}
+                />
+              ))}
+            </div>
+
+            {/* Segunda linha: 2 cards centralizados */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-14 justify-items-center w-full">
+              {members.slice(3).map((member) => (
+                <TeamMemberCard
+                  key={member.name}
+                  avatar={member.avatar}
+                  name={member.name}
+                  role={member.role}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <WaveBackground offset="-mt-[40px]" />
+
+      <aside className="flex items-center justify-center px-3 md:px-6 pt-4 pb-8">
+        <img
+          src={TitleEnding}
+          alt="Entre em um mundo de gestos, histórias e descobertas em Libras."
+          className="w-[320px] md:w-[600px] lg:w-[700px] max-w-full select-none transform md:-translate-x-5"
+        />
+      </aside>
     </>
   );
 }
