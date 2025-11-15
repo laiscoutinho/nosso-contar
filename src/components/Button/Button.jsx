@@ -9,12 +9,13 @@ export default function Button({
   fontSize = "text-base",
   rounded = "rounded-full",
   className = "",
+  animated = true,
   onClick,
 }) {
   return (
     <button
-    onClick={onClick}
-    className={`
+      onClick={onClick}
+      className={`
         ${bgColor} 
         ${textColor} 
         ${padding} 
@@ -26,12 +27,12 @@ export default function Button({
         transition 
         select-none 
         flex items-center justify-center gap-2
-        button-hover
+        ${animated ? "button-hover" : ""} 
         ${className}
-    `}
+      `}
     >
-    {children}
-    {icon && <span className="wave-on-hover">{icon}</span>}
+      {children}
+      {icon && <span className={animated ? "wave-on-hover" : ""}>{icon}</span>}
     </button>
   );
 }
