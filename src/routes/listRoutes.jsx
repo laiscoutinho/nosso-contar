@@ -6,7 +6,7 @@ import WatchVideoTrailView from "../pages/Trails/WatchVideoTrail/view";
 export const publicRoutes = [
     { path: '/', element: <LandingPage />, title: 'Início'},
     { path: '/trilhas', element: <TrailsView />, title: 'Trilhas'},
-    { path: '/trilhas/:id', element: <DetailTrailView />, title: 'Visualizar trilha'},
-    { path: '/trilhas/:id/video/:idVideo', element: <WatchVideoTrailView />, title: 'Visualizar video da trilha'},
+    { path: '/trilhas/:id', element: <DetailTrailView /> },
+    { path: '/trilhas/:id/video/:idVideo', element: <WatchVideoTrailView /> },
     { path: '/historias', element: <LandingPage />, title: 'Histórias'}
 ];

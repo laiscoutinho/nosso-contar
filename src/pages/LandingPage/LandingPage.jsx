@@ -1,3 +1,4 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Hand, MapPlus, BookA, HeartHandshake } from "lucide-react";
 
@@ -19,11 +20,11 @@ import LearningCard from "../../components/LearningCard/LearningCard";
 import TeamMemberCard from "../../components/TeamMemberCard/TeamMemberCard";
 
 const members = [
-  { avatar: Claudia, name: "Claudia Ferreira", role: "Vídeos & Frontend" },
-  { avatar: Lais, name: "Laís Coutinho", role: "UI/UX & Frontend" },
-  { avatar: Rosana, name: "Rosana Celine", role: "Frontend & Backend" },
-  { avatar: Thais, name: "Thaís Araújo", role: "Vídeos & Frontend" },
-  { avatar: Thalyta, name: "Thalyta Lima", role: "Edição de Histórias & Frontend" },
+  { avatar: Claudia, name: "Claudia Ferreira", role: "Vídeos & Frontend", onCLick: "https://github.com/claudia-souza" },
+  { avatar: Lais, name: "Laís Coutinho", role: "UI/UX & Frontend", onCLick: "https://github.com/laiscoutinho" },
+  { avatar: Rosana, name: "Rosana Celine", role: "Frontend & Backend", onCLick: "https://github.com/RosanaCeline" },
+  { avatar: Thais, name: "Thaís Araújo", role: "Vídeos & Frontend", onCLick: "https://github.com/thaisaraujo19" },
+  { avatar: Thalyta, name: "Thalyta Lima", role: "Edição de Histórias & Frontend", onCLick: "https://github.com/thalytalima211" },
 ];
 
 export default function LandingPage() {
@@ -79,16 +80,19 @@ export default function LandingPage() {
               title="Trilhas de Palavras"
               text="Aprenda sinais do dia a dia brincando com palavras divertidas."
               icon={<MapPlus className="w-6 h-6 text-(--pink-strong)" />}
+              onClick={() => navigate('/trilhas')}
             />
             <LearningCard
               title="Alfabeto e Números"
               text="Descubra como cada letra e número ganha vida nas mãos."
               icon={<BookA className="w-6 h-6 text-(--pink-strong)" />}
+              onClick={() => navigate('/trilhas')}
             />
             <LearningCard
               title="Histórias que Encantam"
               text="Histórias mágicas para aprender sinais de forma divertida."
               icon={<HeartHandshake className="w-6 h-6 text-(--pink-strong)" />}
+              onClick={() => navigate('/historias')}
             />
           </div>
         </section>
@@ -147,6 +151,7 @@ export default function LandingPage() {
                   avatar={member.avatar}
                   name={member.name}
                   role={member.role}
+                  onCLick={() => window.open(member.onCLick)}
                 />
               ))}
             </div>
