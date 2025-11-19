@@ -1,0 +1,12 @@
+[
+  {
+    "trilhaId": 1,
+    "tituloTrilha": "Alfabeto",
+    "pairs": [
+      { "id": 1, "titulo": "A", "video": "https://youtube.com/shorts/ULJiHPx_E4Q?si=QsL9WaHzyjf7btcu", "imagem": "https://img.freepik.com/vetores-premium/letra-a_1083548-15159.jpg" },
+      { "id": 2, "titulo": "B", "video": "https://youtube.com/shorts/TMqepn1G-4Q?si=H0gR7oDhz_TDBspe", "imagem": "https://www.palaciodasfestas.com.br/pub/media/catalog/product/cache/6fb2a49fda90fa3bc27e8290a21c793e/7/8/7898641231777.jpg" },
+      { "id": 3, "titulo": "C", "video": "https://youtube.com/shorts/uUmkjUlUV8Q?si=-IDPtxchTG-0F7pM", "imagem": "https://cdn.awsli.com.br/1333/1333597/produto/230631214800027a6a1.jpg" },
+      { "id": 4, "titulo": "D", "video": "https://youtube.com/shorts/2hQODaoR83A?si=3IleYeDjhmk50W7Y", "imagem": "https://cdn.awsli.com.br/1333/1333597/produto/230501685/202308231414539612591224-dyqeeob7xo.png" }
+    ]
+  }
+]

@@ -16,6 +16,7 @@ const howPlay = [
 ];
 
 const MemoryGameView = () => {
+    
     return (
         <>
             <main
