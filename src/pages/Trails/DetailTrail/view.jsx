@@ -5,13 +5,12 @@ import { Play } from "lucide-react";
 import iconsHandTitle from "../../../assets/decor/trilhasIconsHand.png";
 import TitleEnding from "../../../assets/decor/titleEnding.png";
 
-import Button from '../../../components/Button/Button';
-import WaveBackground from "../../../components/WaveBackground/WaveBackground";
+import Button from '../../../components/Button/index';
+import WaveBackground from "../../../components/WaveBackground/index";
+import PlayCard from '../../../components/PlayCard/index';
 
 import trailsData from "../../../service/trailsCard.json"
 import trailsVideosData from "../../../service/trailsVideos.json"
-import PlayCard from '../../../components/PlayCard/view';
-
 
 const DetailTrailView = () => {
 
