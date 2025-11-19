@@ -8,7 +8,6 @@ export default function AppRoutes() {
 
   return (
     <Routes>
-      {/* Rotas públicas */}
       <Route path="/" element={<PublicLayout routes={publicRoutes} />}>
         {publicRoutes.map(({ path, element }) => (
           <Route key={path} path={path} element={element} />
