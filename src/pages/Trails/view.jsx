@@ -5,8 +5,8 @@ import trailsData from "../../service/trailsCard.json"
 
 import Logo from "../../assets/logo/logo_Nosso_Contar_wide.png";
 import iconsHandTitle from "../../assets/decor/trilhasIconsHand.png";
-import trilhasSetas from "../../assets/decor/trilhasInicial.png";
-import TitleEnding from "../../assets/decor/titleEnding.png";
+import trilhasSetas from "../../assets/decor/home/trilhasInicial.png";
+import TitleEnding from "../../assets/decor/home/titleEnding.png";
 
 import WaveBackground from "../../components/WaveBackground/index";
 import ModuleCard from '../../components/ModuleCard/index';

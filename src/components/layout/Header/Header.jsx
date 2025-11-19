@@ -7,7 +7,7 @@ export default function Header({ routes }) {
   const toggleMenu = () => setMenuVisible(!menuVisible);
 
   return (
-    <header className="relative top-0 left-0 h-25 bg-(--white-soft) text-pink-strong z-50 px-10 flex items-center justify-between layout-margin">
+    <header className="relative h-25 bg-(--white-soft) text-pink-strong z-50 flex items-center justify-between layout-margin px-10">
       <div className="flex items-center">
         <img src={logo} alt="Logo Nosso contar" className="w-auto max-w-40 md:max-w-60 select-none" />
       </div>

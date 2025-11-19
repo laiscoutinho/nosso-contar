@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import { Play } from "lucide-react";
 import iconsHandTitle from "../../../assets/decor/trilhasIconsHand.png";
-import TitleEnding from "../../../assets/decor/titleEnding.png";
+import TitleEnding from "../../../assets/decor/home/titleEnding.png";
 
 import Button from '../../../components/Button/index';
 import WaveBackground from "../../../components/WaveBackground/index";

@@ -2,12 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Hand, MapPlus, BookA, HeartHandshake } from "lucide-react";
 
-import Children from "../../assets/decor/children.png";
+import Children from "../../assets/decor/home/children.png";
 import Logo from "../../assets/logo/logo_Nosso_Contar.png";
-import TitleWithHands from "../../assets/decor/titleWithHands.png";
-import TitleAbout from "../../assets/decor/titleAbout.png"
-import GirlWithHands from "../../assets/decor/girlWithHands.png"
-import TitleEnding from "../../assets/decor/titleEnding.png";
+import TitleWithHands from "../../assets/decor/home/titleWithHands.png";
+import TitleAbout from "../../assets/decor/home/titleAbout.png"
+import GirlWithHands from "../../assets/decor/home/girlWithHands.png"
+import TitleEnding from "../../assets/decor/home/titleEnding.png";
 import Claudia from "../../assets/team/claudia.jpg";
 import Lais from "../../assets/team/lais.jpg";
 import Rosana from "../../assets/team/rosana.jpg";
