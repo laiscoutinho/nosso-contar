@@ -6,7 +6,6 @@ import Logo from "../../assets/logo/logo_Nosso_Contar.png";
 import TitleWithHands from "../../assets/decor/titleWithHands.png";
 import TitleAbout from "../../assets/decor/titleAbout.png"
 import GirlWithHands from "../../assets/decor/girlWithHands.png"
-import TitleEnding from "../../assets/decor/titleEnding.png";
 import Claudia from "../../assets/team/claudia.jpg";
 import Lais from "../../assets/team/lais.jpg";
 import Rosana from "../../assets/team/rosana.jpg";
@@ -17,6 +16,7 @@ import Button from "../../components/Button/Button"
 import WaveBackground from "../../components/WaveBackground/WaveBackground";
 import LearningCard from "../../components/LearningCard/LearningCard";
 import TeamMemberCard from "../../components/TeamMemberCard/TeamMemberCard";
+import EndingTitle from "../../components/EndingTitle/EndingTitle";
 
 const members = [
   { avatar: Claudia, name: "Claudia Ferreira", role: "Vídeos & Frontend" },
@@ -168,13 +168,7 @@ export default function LandingPage() {
 
       <WaveBackground offset="-mt-[40px]" />
 
-      <aside className="flex items-center justify-center px-3 md:px-6 pt-4 pb-8">
-        <img
-          src={TitleEnding}
-          alt="Entre em um mundo de gestos, histórias e descobertas em Libras."
-          className="w-[320px] md:w-[600px] lg:w-[700px] max-w-full select-none transform md:-translate-x-5"
-        />
-      </aside>
+      <EndingTitle />
     </>
   );
 }
