@@ -19,7 +19,7 @@ export default function PlayCard({ logo, card, flipped, disabled, onClick }) {
                         background: "linear-gradient(180deg, #ffd1e8, #ffffff)",
                     }}
                 >
-                    <img src={logo} alt="Logo" className="w-16 h-16 object-contain" />
+                    <img src={logo} alt="Logo" className="w-30 h-30 object-contain" />
                 </div>
 
                 {/* Verso — conteudo */}

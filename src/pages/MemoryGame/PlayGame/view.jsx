@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 
+import { Play } from "lucide-react"
 import Logo from "../../../assets/logo/logo_Nosso_Contar.png";
+
+import TitleH2 from "../../../components/Texts/TitleH2/index"
 import PlayCard from "../../../components/PlayCard/index";
+import Button from "../../../components/Button";
 
 import gameData from "../../../service/memoryData.json";
 import trailsData from "../../../service/trailsCard.json"
@@ -70,19 +74,24 @@ export default function PlayGameView({ trilhaId = 1 }) {
     return (
         <div className="w-full h-full flex flex-col items-center justify-center">
             {!start && (
-                <button onClick={() => setStart(true)}
-                        className="px-6 py-3 bg-(--pink-strong) text-white rounded-2xl text-xl font-bold shadow-lg"
+                <Button 
+                    bgColor = "bg-(--pink-strong)"
+                    fontSize = "text-xl"
+                    icon={<Play />}
+                    className="px-20 py-5 text-5xl font-bold shadow-lg"
+                    onClick={() => setStart(true)}
                 >
                     JOGAR
-                </button>
+                </Button>
             )}
 
             {start && (
                 <div>
-                    <h2 className="text-base sm:text-xl md:text-2xl font-bold mb-6">
-                        Tema:
+                    <TitleH2 className="text-center sm:text-xl md:text-3xl">
+                        Tema: 
                         <span className="text-(--pink-strong)"> {trail.titulo}</span>!
-                    </h2>
+                    </TitleH2>
+
                     <div className="grid grid-cols-4 gap-4 mt-6 w-760 h-520"
                         style={{ width: "760px", height: "520px" }}
                     >
@@ -103,7 +112,8 @@ export default function PlayGameView({ trilhaId = 1 }) {
                             );
                         })}
                     </div>
-                    Acertos e erros
+                    Acertos:
+                    Erros:
                 </div>
             )}
         </div>

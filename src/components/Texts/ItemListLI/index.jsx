@@ -1,15 +1,16 @@
 import mascoteNossoContar from "../../../assets/logo/mascote.png"
 
-const ItemListLI = ({ index, text, icon }) => {
+const ItemListLI = ({ index, text, icon, className = "" }) => {
     return (
         <li
             key={index}
-            className="
+            className={`
                 flex items-center 
                 gap-8
                 text-lg text-gray-800
                 mb-5
-            "
+                ${className}
+            `}
         >
             <img
                 src={mascoteNossoContar}
