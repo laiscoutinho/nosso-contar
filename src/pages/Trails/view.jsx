@@ -8,8 +8,8 @@ import iconsHandTitle from "../../assets/decor/trilhasIconsHand.png";
 import trilhasSetas from "../../assets/decor/trilhasInicial.png";
 import TitleEnding from "../../assets/decor/titleEnding.png";
 
-import WaveBackground from "../../components/WaveBackground/WaveBackground";
-import ModuleCard from '../../components/ModuleCard/view';
+import WaveBackground from "../../components/WaveBackground/index";
+import ModuleCard from '../../components/ModuleCard/index';
 
 // renderizar em amarelinha
 const buildHopscotch = (data) => {

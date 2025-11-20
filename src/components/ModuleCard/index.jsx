@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Telescope } from "lucide-react";
 import tijoloCard from "../../assets/decor/trailsCards/trailsTijoloCard.png";
 
-import Button from "../../components/Button/Button";
+import Button from "../Button";
 
 const ModuleCard = ({ id, title, description, image }) => {
     const navigate = useNavigate();
