@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Button({
   children,
-  icon = null,           // ícone opcional
+  icon = null,
   bgColor = "bg-(--sage-green)",
   textColor = "text-white",
   padding = "py-3 px-8",

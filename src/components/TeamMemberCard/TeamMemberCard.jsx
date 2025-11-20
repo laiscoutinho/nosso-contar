@@ -1,6 +1,9 @@
-export default function TeamMemberCard({ avatar, name, role }) {
+import React from "react";
+
+export default function TeamMemberCard({ avatar, name, role, onClick }) {
     return (
-        <div className="relative border-2 border-(--pink-light) rounded-3xl shadow-md overflow-hidden w-[225px] md:w-[235px] lg:w-[325px]">
+        <div onClick={onClick} 
+            className="relative border-2 border-(--pink-light) rounded-3xl shadow-md overflow-hidden w-[225px] md:w-[235px] lg:w-[325px]">
             <div className="absolute inset-0 shadow-[inset_0_3px_15px_var(--blue-light)] pointer-events-none rounded-xl"></div>
 
             <img
