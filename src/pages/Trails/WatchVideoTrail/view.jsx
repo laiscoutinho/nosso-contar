@@ -4,6 +4,32 @@ import { Play } from "lucide-react";
 
 import trailsVideosData from "../../../service/trailsVideos.json";
 
+const buildVideoSrc = (rawLink) => {
+    if (!rawLink) return null;
+
+    // YOUTUBE SHORT (youtu.be)
+    if (rawLink.includes("youtu.be")) {
+        const id = rawLink.split("youtu.be/")[1]?.split("?")[0];
+        return `https://www.youtube.com/embed/${id}`;
+    }
+
+    // YOUTUBE NORMAL (watch?v=)
+    if (rawLink.includes("youtube.com/watch")) {
+        const id = new URL(rawLink).searchParams.get("v");
+        return `https://www.youtube.com/embed/${id}`;
+    }
+
+    // GOOGLE DRIVE (file/d/ID/view)
+    if (rawLink.includes("drive.google.com")) {
+        const match = rawLink.match(/\/d\/(.*?)\//);
+        const fileId = match?.[1];
+        if (!fileId) return null;
+        return `https://drive.google.com/file/d/${fileId}/preview`;
+    }
+
+    return null; 
+};
+
 const WatchVideoTrailView = () => {
     
     const { id: idModulo, idVideo } = useParams();
@@ -51,10 +77,10 @@ const WatchVideoTrailView = () => {
                 {video?.link ? (
                     <iframe
                         className="w-full h-full"
-                        src={video.link.replace("youtu.be/", "www.youtube.com/embed/")}
+                        src={buildVideoSrc(video.link)}
                         title={video?.title}
                         frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allow="accelerometer; autoplay; clipboard-write; picture-in-picture"
                         allowFullScreen
                     ></iframe>
                 ) : (

@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { publicRoutes } from './listRoutes';
 
 import PublicLayout from "../components/layout/PublicLayout/PublicLayout"
+import NotFound from "../pages/NotFound/NotFound";
 
 export default function AppRoutes() {
 
@@ -13,6 +14,8 @@ export default function AppRoutes() {
           <Route key={path} path={path} element={element} />
         ))}
       </Route>
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   )
 }
