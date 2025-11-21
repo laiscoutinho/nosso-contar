@@ -13,7 +13,7 @@ import Rosana from "../../assets/team/rosana.jpg";
 import Thais from "../../assets/team/thais.jpg";
 import Thalyta from "../../assets/team/thalyta.jpg";
 
-import Button from "../../components/Button/Button";
+import Button from "../../components/Button/index";
 import WaveBackground from "../../components/WaveBackground/index";
 import LearningCard from "../../components/LearningCard/index";
 import TeamMemberCard from "../../components/TeamMemberCard/index";
