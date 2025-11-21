@@ -5,8 +5,8 @@ import Logo from "../../assets/logo/logo_Nosso_Contar_wide.png";
 import NotFoundGif from "../../assets/decor/notFound.gif";
 
 import Footer from "../../components/layout/Footer/Footer"
-import Button from "../../components/Button/Button";
-import WaveBackground from "../../components/WaveBackground/WaveBackground";
+import Button from "../../components/Button/index";
+import WaveBackground from "../../components/WaveBackground/index";
 
 export default function NotFound() {
   const navigate = useNavigate();
