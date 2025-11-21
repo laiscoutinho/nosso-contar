@@ -12,7 +12,7 @@ export default function PublicLayout({ routes }) {
   return (
     <div className="min-h-screen flex flex-col">
       <Header routes={headerRoutes} />
-      <main className="flex-grow">
+      <main className="grow">
         <Outlet />
       </main>
       <Footer />
