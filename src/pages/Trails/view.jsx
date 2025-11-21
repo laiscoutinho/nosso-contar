@@ -14,6 +14,7 @@ import TrilhasEnding from "../../assets/decor/trilhasEnding.svg"
 import WaveBackground from "../../components/WaveBackground/index";
 import ModuleCard from '../../components/ModuleCard/index';
 import Button from '../../components/Button/index';
+import EndingTitle from '../../components/EndingTitle/index';
 
 // renderizar em amarelinha
 const buildHopscotch = (data) => {
@@ -67,7 +68,8 @@ const TrailsView = () => {
                             src={iconsHandTitle}
                             alt="Ícones"
                             className="
-                                max-w-[100px] md:max-w-[120px] lg:max-w-[150px]
+                                hidden lg:block
+                                max-w-[150px]
                                 w-full h-auto 
                                 select-none
                             "
@@ -85,7 +87,7 @@ const TrailsView = () => {
                     {/* Texto */}
                     <div className="flex-1 text-left">
                         <p className="
-                            text-lg sm:text-xl md:text-2xl 
+                            text-base sm:text-xl md:text-2xl 
                             text-gray-800 max-w-[600px] font-medium
                         ">
                             Aqui começa a sua jornada em
@@ -103,7 +105,7 @@ const TrailsView = () => {
                             alt="Ilustração"
                             className="
                                 w-full 
-                                max-w-[300px] 
+                                max-w-[200px] sm:max-w-[300px]
                                 min-w-[150px]
                                 object-contain select-none
                             "
@@ -136,7 +138,7 @@ const TrailsView = () => {
 
                 <section className="flex flex-col items-center justify-center relative mt-10">
                     <h2 className="self-start mt-8 mb-4 px-6
-                                    text-base sm:text-2xl md:text-[2rem] md:px-10 font-bold max-w-3xl">
+                                    text-lg sm:text-2xl md:text-[2rem] md:px-10 font-bold max-w-3xl">
                         Escolha sua trilha de aprendizagem
                     </h2>
 
@@ -145,9 +147,10 @@ const TrailsView = () => {
                             <div
                                 key={index}
                                 className={`
-                                    flex 
-                                    ${group.length === 1 ? "justify-center" : "justify-between"}
-                                    w-full max-w-[700px]
+                                    flex flex-col
+                                    md:flex-row
+                                    ${group.length === 1 ? "md:justify-center" : "md:justify-between"}
+                                    w-full max-w-[800px]
                                     gap-6
                                 `}
                             >
@@ -163,6 +166,7 @@ const TrailsView = () => {
                             </div>
                         ))}
                     </div>
+
 
 
                 </section>
@@ -187,13 +191,7 @@ const TrailsView = () => {
 
             <WaveBackground offset="-mt-[40px]" />
 
-            <aside className="flex items-center justify-center px-3 md:px-6 pt-4 pb-8">
-                <img
-                    src={TitleEnding}
-                    alt="Entre em um mundo de gestos, histórias e descobertas em Libras."
-                    className="w-[320px] md:w-[600px] lg:w-[700px] max-w-full select-none transform md:-translate-x-5"
-                />
-            </aside>
+            <EndingTitle />
         </>
     )
 }
