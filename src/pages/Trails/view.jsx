@@ -13,7 +13,7 @@ import ModuleCard from '../../components/ModuleCard/index';
 
 // renderizar em amarelinha
 const buildHopscotch = (data) => {
-    const startWithOne = data.length % 2 === 1; 
+    const startWithOne = data.length % 2 === 1;
     let expectOne = startWithOne;
     const result = [];
     let i = 0;
@@ -26,7 +26,7 @@ const buildHopscotch = (data) => {
             result.push(data.slice(i, i + 2));
             i += 2;
         }
-        expectOne = !expectOne; 
+        expectOne = !expectOne;
     }
     return result;
 };
@@ -39,50 +39,49 @@ const TrailsView = () => {
 
     return (
         <>
-            <main className="relative h-auto mb-0 px-6 md:px-25 py-10 
-                            bg-(--white-soft) 
-                            rounded-bl-[50px] rounded-br-[50px]
-                            flex flex-col gap-12 
-                            overflow-hidden
-                        ">
+            <main className="relative h-auto ml:h-[80vh] mb-0 px-6 md:px-10 py-12 
+                    bg-(--white-soft) 
+                    text-start 
+                    rounded-bl-[50px] rounded-br-[50px]
+                    flex flex-col items-start justify-center gap-7 md:gap-10 
+                    layout-margin
+                    overflow-hidden
+                ">
 
                 <div className=" w-full flex items-start space-between gap-6 md:gap-12 flex-nowrap ">
-                    <div className='flex flex-nowrap'>
+                    <div className='flex flex-nowrap gap-4'>
                         {/* Título */}
                         <h2 className="
                             text-base sm:text-2xl md:text-4xl 
                             font-bold leading-tight
                             max-w-full text-left
+                            [text-shadow:0px_0px_4px_rgba(0,0,0,0.25)] 
+                            flex gap-2 justify-center items-center
                         ">
-                            Bem-Vindo às 
+                            Bem-Vindo às
                             <span className="text-(--pink-strong)"> Trilhas </span> do
-                        </h2>
-                        {/* Logo */}
-                        <img
-                            src={Logo}
-                            alt="Logo"
-                            className="
-                                h-full max-h-10 ml-5 mr-5
-                                object-contain select-none
-                            "
-                        />
-                        <h2 className="
-                            text-base sm:text-2xl md:text-4xl 
-                            font-bold leading-tight
-                            max-w-full text-left
-                        ">
+                        
+                            {/* Logo */}
+                            <img
+                                src={Logo}
+                                alt="Logo"
+                                className="
+                                    h-6 md:h-11 inline-block -translate-y-1 select-none
+                                "
+                            />
                             !
                         </h2>
                     </div>
-                    
+
                     <div>
                         {/* Ícones */}
                         <img
                             src={iconsHandTitle}
                             alt="Ícones"
                             className="
-                                h-full max-h-20
-                                object-contain select-none
+                                max-w-[100px] md:max-w-[120px] lg:max-w-[150px]
+                                w-full h-auto 
+                                select-none
                             "
                         />
                     </div>
@@ -91,7 +90,7 @@ const TrailsView = () => {
                 {/* ===== CONTENT SECTION ===== */}
                 <div className="
                     w-full flex flex-col md:flex-row 
-                    items-center md:items-start 
+                    items-center
                     justify-between gap-10
                 ">
 
@@ -102,9 +101,9 @@ const TrailsView = () => {
                             text-gray-800 max-w-[600px] font-medium
                         ">
                             Aqui começa a sua jornada em
-                            <span className="text-(--pink-strong)"> Libras</span>!  
+                            <span className="text-(--pink-strong)"> Libras</span>!
                             Explore os
-                            <span className="text-(--pink-strong)"> módulos</span>, descubra novas palavras e aprenda com  
+                            <span className="text-(--pink-strong)"> módulos</span>, descubra novas palavras e aprenda com
                             <span className="text-(--pink-strong)"> vídeos</span> interativos.
                         </p>
                     </div>
@@ -160,11 +159,11 @@ const TrailsView = () => {
                 </section>
 
                 <section className="flex flex-col items-center justify-center relative mt-10 gap-5 layout-margin">
-                <div className="flex flex-col lg:flex-row items-center gap-8 layout-margin mt-4">
-                    <h2 className="self-start text-base sm:text-xl md:text-2xl px-6 md:px-10 font-bold mt-8 mb-4 max-w-3xl">
-                        Cada passo trouxe novas descobertas. Continue explorando e se divertindo com Libras!
-                    </h2>
-                </div>
+                    <div className="flex flex-col lg:flex-row items-center gap-8 layout-margin mt-4">
+                        <h2 className="self-start text-base sm:text-xl md:text-2xl px-6 md:px-10 font-bold mt-8 mb-4 max-w-3xl">
+                            Cada passo trouxe novas descobertas. Continue explorando e se divertindo com Libras!
+                        </h2>
+                    </div>
                 </section>
             </div>
 
