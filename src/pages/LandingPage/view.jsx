@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Hand, MapPlus, BookA, HeartHandshake } from "lucide-react";
 
-import Children from "../../assets/decor/home/children.png";
+import Children from "../../assets/decor/children.png";
 import Logo from "../../assets/logo/logo_Nosso_Contar.png";
 import TitleWithHands from "../../assets/decor/titleWithHands.png";
 import TitleAbout from "../../assets/decor/titleAbout.png"
@@ -13,7 +13,6 @@ import Rosana from "../../assets/team/rosana.jpg";
 import Thais from "../../assets/team/thais.jpg";
 import Thalyta from "../../assets/team/thalyta.jpg";
 
-import SubtitleP from "../../components/Texts/SubtitleP";
 import Button from "../../components/Button/index";
 import WaveBackground from "../../components/WaveBackground/index";
 import LearningCard from "../../components/LearningCard/index";
@@ -51,12 +50,11 @@ export default function LandingPage() {
             className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] mb-4 sm:mb-6 select-none"
           />
 
-          <SubtitleP className="text-center">
-            <span className="text-(--pink-strong)">Trilhas </span> 
-            divertidas, letras que ganham vida e 
-            <span className="text-(--pink-strong)"> histórias </span> 
-            cheias de sinais.
-          </SubtitleP>
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-800 max-w-md font-medium">
+            <span className="text-(--pink-strong)">Trilhas</span> divertidas, letras que
+            ganham vida e <span className="text-(--pink-strong)">histórias</span> cheias
+            de sinais.
+          </p>
 
           <Button
             onClick={() => navigate("/historias")}
@@ -134,9 +132,9 @@ export default function LandingPage() {
 
       <div className="bg-(--white-soft)">
         <section className="flex flex-col items-start px-6 md:px-10 py-18">
-          <TitleH2 className="flex-start">
+          <h2 className="text-base sm:text-xl md:text-2xl font-bold mb-4">
             Quem trouxe o Nosso Contar à vida
-          </TitleH2>
+          </h2>
 
           <div className="w-full flex justify-center">
             <p className="text-base font-medium sm:text-lg md:text-xl leading-relaxed max-w-[650px] text-center">
