@@ -16,13 +16,14 @@ const ModuleCard = ({ id, title, description, image }) => {
 
     return (
         <div
-            className=" relative flex flex-col items-center text-center
+            className=" relative flex flex-col justify-center items-center text-center
                         bg-(--white-soft) rounded-3xl shadow-md
                         p-6 m-[15px]
                         hover:shadow-lg transition-shadow duration-300
-                        min-w-[350px] max-h-full min-h-[300px] 
-                        sm:w-[300px] sm:h-[300px] sm:max-w-[300px]
-                        md:w-[300px] md:h-[300px] md:max-w-[300px]
+                        min-w-[270px] max-h-full min-h-[270px] 
+                        sm:w-[320px] sm:h-80 sm:max-w-[320px]
+                        md:w-[310px] md:h-80 md:max-w-[310px]
+                        lg:w-[320px] lg:h-80 lg:max-w-[320px]
                         overflow-visible
                     "
         >
@@ -46,15 +47,15 @@ const ModuleCard = ({ id, title, description, image }) => {
             <img
                 src={imageSrc}
                 alt={title}
-                className=" absolute w-auto max-h-[90%]
-                            -right-8 top-1/2 -translate-y-1/2
+                className=" absolute w-[60px] sm:w-auto max-h-[90%]
+                            -right-7 sm:-right-9 top-1/2 -translate-y-1/2
                             object-contain pointer-events-none
                         "
             />
 
             {/* Título e descrição */}
             <div className="mt-8 px-3 z-10">
-                <h3 className="text-(--pink-strong) text-3xl font-bold mb-2 leading-tight">
+                <h3 className="text-(--pink-strong) text-2xl sm:text-3xl font-bold mb-2 leading-tight">
                     Módulo {title}
                 </h3>
                 <p className="mt-5 text-base font-medium text-(--black) leading-snug">
@@ -68,6 +69,7 @@ const ModuleCard = ({ id, title, description, image }) => {
                     onClick={() => navigate(`/trilhas/${id}`)}
                     icon={<Telescope className="w-5 h-5 text-(--white-soft)" />}
                     bgColor="bg-(--pink-strong)"
+                    animated={false}
                 >
                     Explorar
                 </Button>

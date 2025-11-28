@@ -4,10 +4,9 @@ import { Hand, MapPlus, BookA, HeartHandshake } from "lucide-react";
 
 import Children from "../../assets/decor/home/children.png";
 import Logo from "../../assets/logo/logo_Nosso_Contar.png";
-import TitleWithHands from "../../assets/decor/home/titleWithHands.png";
-import TitleAbout from "../../assets/decor/home/titleAbout.png"
-import GirlWithHands from "../../assets/decor/home/girlWithHands.png"
-import TitleEnding from "../../assets/decor/home/titleEnding.png";
+import TitleWithHands from "../../assets/decor/titleWithHands.png";
+import TitleAbout from "../../assets/decor/titleAbout.png"
+import GirlWithHands from "../../assets/decor/girlWithHands.png"
 import Claudia from "../../assets/team/claudia.jpg";
 import Lais from "../../assets/team/lais.jpg";
 import Rosana from "../../assets/team/rosana.jpg";
@@ -19,7 +18,7 @@ import Button from "../../components/Button/index";
 import WaveBackground from "../../components/WaveBackground/index";
 import LearningCard from "../../components/LearningCard/index";
 import TeamMemberCard from "../../components/TeamMemberCard/index";
-import TitleH2 from "../../components/Texts/TitleH2";
+import EndingTitle from "../../components/EndingTitle/index";
 
 const members = [
   { avatar: Claudia, name: "Claudia Ferreira", role: "Vídeos & Frontend", onCLick: "https://github.com/claudia-souza" },
@@ -176,13 +175,7 @@ export default function LandingPage() {
 
       <WaveBackground offset="-mt-[40px]" />
 
-      <aside className="flex items-center justify-center px-3 md:px-6 pt-4 pb-8">
-        <img
-          src={TitleEnding}
-          alt="Entre em um mundo de gestos, histórias e descobertas em Libras."
-          className="w-[320px] md:w-[600px] lg:w-[700px] max-w-full select-none transform md:-translate-x-5"
-        />
-      </aside>
+      <EndingTitle />
     </>
   );
 }
