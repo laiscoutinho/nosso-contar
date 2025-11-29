@@ -9,15 +9,13 @@ import Button from '../../../components/Button/index';
 import WaveBackground from "../../../components/WaveBackground/index";
 import PlayCard from '../../../components/PlayCard/index';
 
-import trailsData from "../../../service/trailsCard.json"
-import trailsVideosData from "../../../service/trailsVideos.json"
+import trails from "../../../service/trailsAndGame.json";
 
 const DetailTrailView = () => {
 
     const { id } = useParams();
     const navigate = useNavigate();
-    const trail = trailsData.find(item => item.id === Number(id));
-    const trailVideos = trailsVideosData.find(item => item.id === Number(id));
+    const trail = trails.find(item => item.id === Number(id));
 
     const formattedId = trail.id < 10 ? `0${trail.id}` : trail.id;
 
@@ -72,7 +70,7 @@ const DetailTrailView = () => {
                             O que você irá aprender:
                         </p>
                         <ul className="list-disc pl-6">
-                            {trail.learn?.map((topic, index) => (
+                            {trail.conteudo?.map((topic, index) => (
                                 <li key={index}>{topic}</li>
                             ))}
                         </ul>
@@ -88,13 +86,13 @@ const DetailTrailView = () => {
                     </h2>
 
                     <div className="flex flex-col items-center gap-8 px-6 md:px-10 mt-8">
-                        {trailVideos?.videos?.map((videoUrl, index) => (
+                        {trail.pairs?.map((video, index) => (
                             <PlayCard
                                 key={index}
-                                idModulo={trail.id}
-                                idVideo={index + 1}
-                                subtitle={videoUrl.title}
-                                url={videoUrl.link}
+                                image={video.image} 
+                                text={video.title}
+                                icon={<Play />}
+                                onClick={() => navigate(`/trilhas/${trail.id}/video/${video.id}`)}
                             />
                         ))}
                     </div>

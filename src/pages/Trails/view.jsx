@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import { Hand } from "lucide-react";
 
-import trailsData from "../../service/trailsCard.json"
+import trails from "../../service/trailsAndGame.json";
 
 import Logo from "../../assets/logo/logo_Nosso_Contar_wide.png";
 import TrilhasTitle from "../../assets/decor/trilhasTitle.png"
@@ -40,7 +40,7 @@ const buildHopscotch = (data) => {
 const TrailsView = () => {
 
     const navigate = useNavigate();
-    const groups = buildHopscotch(trailsData);
+    const groups = buildHopscotch(trails);
 
     return (
         <>

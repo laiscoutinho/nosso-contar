@@ -22,11 +22,11 @@ import TeamMemberCard from "../../components/TeamMemberCard/index";
 import EndingTitle from "../../components/EndingTitle/index";
 
 const members = [
-  { avatar: Claudia, name: "Claudia Ferreira", role: "Vídeos & Frontend", onCLick: "https://github.com/claudia-souza" },
+  { avatar: Claudia, name: "Claudia Ferreira", role: "Gravação de Trilhas & Histórias", onCLick: "https://github.com/claudia-souza" },
   { avatar: Lais, name: "Laís Coutinho", role: "UI/UX & Frontend", onCLick: "https://github.com/laiscoutinho" },
-  { avatar: Rosana, name: "Rosana Celine", role: "Frontend & Backend", onCLick: "https://github.com/RosanaCeline" },
-  { avatar: Thais, name: "Thaís Araújo", role: "Vídeos & Frontend", onCLick: "https://github.com/thaisaraujo19" },
-  { avatar: Thalyta, name: "Thalyta Lima", role: "Edição de Histórias & Frontend", onCLick: "https://github.com/thalytalima211" },
+  { avatar: Rosana, name: "Rosana Celine", role: "Frontend", onCLick: "https://github.com/RosanaCeline" },
+  { avatar: Thais, name: "Thaís Araújo", role: "Gravação de Trilhas & Histórias", onCLick: "https://github.com/thaisaraujo19" },
+  { avatar: Thalyta, name: "Thalyta Lima", role: "Edição de Trilhas & Histórias", onCLick: "https://github.com/thalytalima211" },
 ];
 
 export default function LandingPage() {
