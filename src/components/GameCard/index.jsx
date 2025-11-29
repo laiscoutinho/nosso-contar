@@ -1,24 +1,26 @@
 import React from "react";
 
-function buildMediaSrc(rawLink) {
+function buildMediaSrc(rawLink, type) {
     if (!rawLink) return null;
 
-    // Google Drive → embed correto (/preview)
+    // Google Drive
     if (rawLink.includes("drive.google.com")) {
         const match = rawLink.match(/\/d\/(.*?)\//);
         const id = match?.[1];
-        return id
-            ? `https://drive.google.com/file/d/${id}/preview`
-            : rawLink;
+
+        if (!id) return rawLink;
+
+        return type === "image"
+            ? `https://drive.google.com/thumbnail?id=${id}`
+            : `https://drive.google.com/file/d/${id}/preview`;
     }
 
-    // YouTube short → embed
+    // YouTube short
     if (rawLink.includes("youtu.be")) {
         const id = rawLink.split("youtu.be/")[1]?.split("?")[0];
         return `https://www.youtube.com/embed/${id}`;
     }
-
-    // YouTube normal → embed
+    // YouTube normal
     if (rawLink.includes("youtube.com/watch")) {
         const id = new URL(rawLink).searchParams.get("v");
         return `https://www.youtube.com/embed/${id}`;
@@ -36,8 +38,8 @@ export default function GameCard({ logo, card, flipped, disabled, onClick }) {
 
     const mediaSrc =
         card.type === "image"
-            ? buildMediaSrc(card.image)
-            : buildMediaSrc(card.link);
+            ? buildMediaSrc(card.image, "image")
+            : buildMediaSrc(card.link, "video");
 
     const isIframe =
         mediaSrc?.includes("youtube.com/embed") ||
