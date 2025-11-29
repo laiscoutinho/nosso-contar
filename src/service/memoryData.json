@@ -3,10 +3,204 @@
     "trilhaId": 1,
     "tituloTrilha": "Alfabeto",
     "pairs": [
-      { "id": 1, "titulo": "A", "video": "https://youtube.com/shorts/ULJiHPx_E4Q?si=QsL9WaHzyjf7btcu", "imagem": "https://img.freepik.com/vetores-premium/letra-a_1083548-15159.jpg" },
-      { "id": 2, "titulo": "B", "video": "https://youtube.com/shorts/TMqepn1G-4Q?si=H0gR7oDhz_TDBspe", "imagem": "https://www.palaciodasfestas.com.br/pub/media/catalog/product/cache/6fb2a49fda90fa3bc27e8290a21c793e/7/8/7898641231777.jpg" },
-      { "id": 3, "titulo": "C", "video": "https://youtube.com/shorts/uUmkjUlUV8Q?si=-IDPtxchTG-0F7pM", "imagem": "https://cdn.awsli.com.br/1333/1333597/produto/230631214800027a6a1.jpg" },
-      { "id": 4, "titulo": "D", "video": "https://youtube.com/shorts/2hQODaoR83A?si=3IleYeDjhmk50W7Y", "imagem": "https://cdn.awsli.com.br/1333/1333597/produto/230501685/202308231414539612591224-dyqeeob7xo.png" }
+      { 
+        "id": 1, 
+        "titulo": "A", 
+        "video": "https://youtube.com/shorts/ULJiHPx_E4Q?si=QsL9WaHzyjf7btcu", 
+        "imagem": "https://img.freepik.com/vetores-premium/letra-a_1083548-15159.jpg" 
+      },
+      { 
+        "id": 2, 
+        "titulo": "B", 
+        "video": "https://youtube.com/shorts/TMqepn1G-4Q?si=H0gR7oDhz_TDBspe", 
+        "imagem": "https://www.palaciodasfestas.com.br/pub/media/catalog/product/cache/6fb2a49fda90fa3bc27e8290a21c793e/7/8/7898641231777.jpg" 
+      },
+      { 
+        "id": 3, 
+        "titulo": "C", 
+        "video": "https://youtube.com/shorts/uUmkjUlUV8Q?si=-IDPtxchTG-0F7pM", 
+        "imagem": "https://cdn.awsli.com.br/1333/1333597/produto/230631214800027a6a1.jpg" 
+      },
+      { 
+        "id": 4, 
+        "titulo": "D", 
+        "video": "https://youtube.com/shorts/2hQODaoR83A?si=3IleYeDjhmk50W7Y", 
+        "imagem": "https://cdn.awsli.com.br/1333/1333597/produto/230501685/202308231414539612591224-dyqeeob7xo.png" 
+      }
+    ]
+  },
+  {
+    "trilhaId": 2,
+    "tituloTrilha": "Números",
+    "pairs": [
+      { 
+        "id": 1, 
+        "titulo": "1", 
+        "video": "", 
+        "imagem": "" 
+      }
+    ]
+  },
+  {
+    "trilhaId": 3,
+    "tituloTrilha": "Cores",
+    "pairs": [
+      { "id": 1, "titulo": "Azul", "video": "AZUL.mp4", "imagem": "" },
+      { "id": 2, "titulo": "Branco", "video": "BRANCo.mp4", "imagem": "" },
+      { "id": 3, "titulo": "Cinza", "video": "CINZA.mp4", "imagem": "" },
+      { "id": 4, "titulo": "Claro", "video": "CLARO.mp4", "imagem": "" },
+      { "id": 5, "titulo": "Cores", "video": "CORES.mp4", "imagem": "" },
+      { "id": 6, "titulo": "Escuro", "video": "ESCURO.mp4", "imagem": "" },
+      { "id": 7, "titulo": "Laranja", "video": "LARANJA.mp4", "imagem": "" },
+      { "id": 8, "titulo": "Marrom", "video": "MARROM.mp4", "imagem": "" },
+      { "id": 9, "titulo": "Preto", "video": "PRETO.mp4", "imagem": "" },
+      { "id": 10, "titulo": "Rosa", "video": "ROSA.mp4", "imagem": "" },
+      { "id": 11, "titulo": "Roxo", "video": "ROXO.mp4", "imagem": "" },
+      { "id": 12, "titulo": "Verde", "video": "VERDE.mp4", "imagem": "" },
+      { "id": 13, "titulo": "Vermelho", "video": "VERMELHO.mp4", "imagem": "" }
+    ]
+  },
+  {
+    "trilhaId": 4,
+    "tituloTrilha": "Saudações",
+    "pairs": [
+      { 
+        "id": 1, 
+        "titulo": "Olá", 
+        "video": "", 
+        "imagem": "" 
+      }
+    ]
+  },
+  {
+    "trilhaId": 5,
+    "tituloTrilha": "Emoções",
+    "pairs": [
+      { 
+        "id": 1, 
+        "titulo": "Feliz", 
+        "video": "", 
+        "imagem": "" 
+      }
+    ]
+  },
+  {
+    "trilhaId": 6,
+    "tituloTrilha": "Família e Amigos",
+    "pairs": [
+      { 
+        "id": 1, 
+        "titulo": "Feliz", 
+        "video": "", 
+        "imagem": "" 
+      }
+    ]
+  },
+  {
+    "trilhaId": 7,
+    "tituloTrilha": "Animais",
+    "pairs": [
+      { "id": 1, "titulo": "Cachorro", "video": "CACHORRO.mp4", "imagem": "" },
+      { "id": 2, "titulo": "Cavalo", "video": "CAVALO.mp4", "imagem": "" },
+      { "id": 3, "titulo": "Coelho", "video": "COELHO.mp4", "imagem": "" },
+      { "id": 4, "titulo": "Fazenda", "video": "FAZENDA.mp4", "imagem": "" },
+      { "id": 5, "titulo": "Galinha", "video": "GALINHA.mp4", "imagem": "" },
+      { "id": 6, "titulo": "Galo", "video": "GALO.mp4", "imagem": "" },
+      { "id": 7, "titulo": "Gato", "video": "GATO.mp4", "imagem": "" },
+      { "id": 8, "titulo": "Ovelha", "video": "OVELHA.mp4", "imagem": "" },
+      { "id": 9, "titulo": "Pato", "video": "PATO.mp4", "imagem": "" },
+      { "id": 10, "titulo": "Porco", "video": "PORCO.mp4", "imagem": "" },
+      { "id": 11, "titulo": "Vaca", "video": "VACA.mp4", "imagem": "" }
+    ]
+  },
+  {
+    "trilhaId": 8,
+    "tituloTrilha": "Escola",
+    "pairs": [
+      { 
+        "id": 1, 
+        "titulo": "Caderno", 
+        "video": "", 
+        "imagem": "" 
+      },
+      { 
+        "id": 2, 
+        "titulo": "Lápis", 
+        "video": "", 
+        "imagem": "" 
+      },
+      { 
+        "id": 3, 
+        "titulo": "Professor", 
+        "video": "", 
+        "imagem": "" 
+      }
+    ]
+  },
+  {
+    "trilhaId": 9,
+    "tituloTrilha": "Dias da semana",
+    "pairs": [
+      { "id": 1, "titulo": "Domingo", "video": "DOMINGO.mp4", "imagem": "" },
+      { "id": 2, "titulo": "Quarta feira", "video": "QUARTA FEIRA.mp4", "imagem": "" },
+      { "id": 3, "titulo": "Quinta feira", "video": "QUINTA FEIRA.mp4", "imagem": "" },
+      { "id": 4, "titulo": "Sabado", "video": "SABADO.mp4", "imagem": "" },
+      { "id": 5, "titulo": "Segunda feira", "video": "SEGUNDA FEIRA.mp4", "imagem": "" },
+      { "id": 6, "titulo": "Sexta feira", "video": "SEXTA FEIRA.mp4", "imagem": "" },
+      { "id": 7, "titulo": "Terça feira", "video": "TERÇA FEIRA.mp4", "imagem": "" }
+    ]
+  },
+  {
+    "trilhaId": 10,
+    "tituloTrilha": "Frutas",
+    "pairs": [
+      { 
+        "id": 1, 
+        "titulo": "Maçã", 
+        "video": "", 
+        "imagem": "" 
+      },
+      { 
+        "id": 2, 
+        "titulo": "Banana", 
+        "video": "", 
+        "imagem": "" 
+      },
+      { 
+        "id": 3, 
+        "titulo": "Uva", 
+        "video": "", 
+        "imagem": "" 
+      }
+    ]
+  },
+  {
+    "trilhaId": 11,
+    "tituloTrilha": "Dias da semana",
+    "pairs": [
+      { "id": 1, "titulo": "Domingo", "video": "DOMINGO.mp4", "imagem": "" },
+      { "id": 2, "titulo": "Quarta feira", "video": "QUARTA FEIRA.mp4", "imagem": "" },
+      { "id": 3, "titulo": "Quinta feira", "video": "QUINTA FEIRA.mp4", "imagem": "" },
+      { "id": 4, "titulo": "Sabado", "video": "SABADO.mp4", "imagem": "" },
+      { "id": 5, "titulo": "Segunda feira", "video": "SEGUNDA FEIRA.mp4", "imagem": "" },
+      { "id": 6, "titulo": "Sexta feira", "video": "SEXTA FEIRA.mp4", "imagem": "" },
+      { "id": 7, "titulo": "Terça feira", "video": "TERÇA FEIRA.mp4", "imagem": "" }
+    ]
+  },
+  {
+    "trilhaId": 12,
+    "tituloTrilha": "Corpo humano",
+    "pairs": [
+      { "id": 1, "titulo": "Boca", "video": "BOCA.mp4", "imagem": "" },
+      { "id": 2, "titulo": "Braco", "video": "BRACO.mp4", "imagem": "" },
+      { "id": 3, "titulo": "Cabelo", "video": "CABELO.mp4", "imagem": "" },
+      { "id": 4, "titulo": "Cabeça", "video": "CABEÇA.mp4", "imagem": "" },
+      { "id": 5, "titulo": "Mao", "video": "MAO.mp4", "imagem": "" },
+      { "id": 6, "titulo": "Nariz", "video": "NARIZ.mp4", "imagem": "" },
+      { "id": 7, "titulo": "Olho", "video": "OLHO.mp4", "imagem": "" },
+      { "id": 8, "titulo": "Ombro", "video": "OMBRO.mp4", "imagem": "" },
+      { "id": 9, "titulo": "Orelha", "video": "ORELHA.mp4", "imagem": "" },
+      { "id": 10, "titulo": "Pé", "video": "PÉ.mp4", "imagem": "" }
     ]
   }
 ]

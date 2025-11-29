@@ -4,15 +4,16 @@ import { Hand, MapPlus, BookA, HeartHandshake } from "lucide-react";
 
 import Children from "../../assets/decor/home/children.png";
 import Logo from "../../assets/logo/logo_Nosso_Contar.png";
-import TitleWithHands from "../../assets/decor/titleWithHands.png";
-import TitleAbout from "../../assets/decor/titleAbout.png"
-import GirlWithHands from "../../assets/decor/girlWithHands.png"
+import TitleWithHands from "../../assets/decor/home/titleWithHands.png";
+import TitleAbout from "../../assets/decor/home/titleAbout.png"
+import GirlWithHands from "../../assets/decor/home/girlWithHands.png"
 import Claudia from "../../assets/team/claudia.jpg";
 import Lais from "../../assets/team/lais.jpg";
 import Rosana from "../../assets/team/rosana.jpg";
 import Thais from "../../assets/team/thais.jpg";
 import Thalyta from "../../assets/team/thalyta.jpg";
 
+import TitleH2 from "../../components/Texts/TitleH2";
 import SubtitleP from "../../components/Texts/SubtitleP";
 import Button from "../../components/Button/index";
 import WaveBackground from "../../components/WaveBackground/index";
