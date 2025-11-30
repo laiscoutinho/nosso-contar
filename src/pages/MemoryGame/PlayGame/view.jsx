@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Confetti from "react-confetti";
 
-import { Play } from "lucide-react"
+import { Play, CircleCheck, CircleX } from "lucide-react"
 import Logo from "../../../assets/logo/logo_Nosso_Contar.png";
 
 import TitleH2 from "../../../components/Texts/TitleH2/index"
@@ -11,18 +12,28 @@ import trails from "../../../service/trailsAndGame.json";
 
 export default function PlayGameView({ trilhaId = 1 }) {
 
-    const trail = trails.find(item => item.id === Number(trilhaId));
+    const [currentTrilha, setCurrentTrilha] = useState(trilhaId);
+    const trail = trails.find((t) => t.id === Number(currentTrilha));
 
     const [start, setStart] = useState(false);
     const [cards, setCards] = useState([]);
     const [choiceOne, setChoiceOne] = useState(null);
     const [choiceTwo, setChoiceTwo] = useState(null);
     const [disabled, setDisabled] = useState(false);
+    const [finished, setFinished] = useState(false);
+
+    const acertos = cards.filter(c => c.matched === true).length / 2; 
+    const erros = cards.filter(c => c.matched === false).length / 2;
+    const chunk = (arr, size) =>
+        arr.reduce((acc, _, i) => {
+            if (i % size === 0) acc.push(arr.slice(i, i + size));
+            return acc;
+        }, []);
 
     useEffect(() => {
         if (!start) return;
 
-        const trilha = trails.find((t) => t.id === Number(trilhaId));
+        const trilha = trails.find((t) => t.id === Number(currentTrilha));
         if (!trilha) return;
 
         const shuffledPairs = [...trilha.pairs].sort(() => Math.random() - 0.5);
@@ -51,7 +62,8 @@ export default function PlayGameView({ trilhaId = 1 }) {
             .sort(() => Math.random() - 0.5);
 
         setCards(generated);
-    }, [start]);
+        setFinished(false);
+    }, [start, currentTrilha]);
 
     const handleChoice = (card) => {
         if (!choiceOne) {
@@ -73,7 +85,14 @@ export default function PlayGameView({ trilhaId = 1 }) {
                 );
                 resetTurn();
             } else {
-                setTimeout(resetTurn, 900);
+                setCards((prev) =>
+                    prev.map((c) =>
+                        c.uid === choiceOne.uid || c.uid === choiceTwo.uid
+                        ? { ...c, matched: false }
+                        : c
+                    )
+                );
+                setTimeout(resetTurn, 900); // altera o tempo de desvirar a carta, quando o match está errado
             }
         }
     }, [choiceOne, choiceTwo]);
@@ -83,6 +102,16 @@ export default function PlayGameView({ trilhaId = 1 }) {
         setChoiceTwo(null);
         setDisabled(false);
     };
+
+    useEffect(() => {
+        if (start && cards.length && cards.every((c) => c.matched)) {
+            setFinished(true);
+            setTimeout(() => {
+                const nextTrilhaId = currentTrilha + 1 > trails.length ? 1 : currentTrilha + 1;
+                setCurrentTrilha(nextTrilhaId);
+            }, 3000);
+        }
+    }, [cards, start]);
 
     return (
         <div className="w-full h-full flex flex-col items-center justify-center">
@@ -127,6 +156,49 @@ export default function PlayGameView({ trilhaId = 1 }) {
                             );
                         })}
                     </div>
+                    <div className="mt-4 w-full flex justify-between items-start px-4">
+                        <div className="flex flex-col gap-2">
+                            <div className="flex items-center gap-4">
+                                <div className="flex gap-2">
+                                    <CircleCheck className="text-(--pink-strong)" />
+                                    Acertos: {acertos}
+                                </div>
+                                <div className="flex gap-2">
+                                    <CircleX className="text-(--pink-strong)" />
+                                    Erros: {erros}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            {chunk(Array(trails.length).fill(0), 7).map((row, rowIndex) => {
+                                const trilhasCompletas = currentTrilha - 1;
+                                return (
+                                    <div key={rowIndex} className="flex gap-2">
+                                        {row.map((_, index) => {
+                                            const globalIndex = rowIndex * 7 + index;
+                                            const isFilled = globalIndex < trilhasCompletas;
+                                            return (
+                                                <div
+                                                    key={globalIndex}
+                                                    className={`w-6 h-6 rounded-full border-2 border-(--pink-strong)
+                                                        ${isFilled ? "bg-(--pink-strong)" : "bg-white"}`}
+                                                ></div>
+                                            );
+                                        })}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+                    {finished && (
+                        <>
+                            <Confetti numberOfPieces={200} recycle={false} />
+                            <div className="mt-6 text-4xl font-bold text-(--pink-strong)">
+                                🎉 Parabéns! 🎉
+                            </div>
+                        </>
+                    )}
                 </div>
             )}
         </div>
