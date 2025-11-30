@@ -1,8 +1,8 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Play } from "lucide-react";
 
-import trailsVideosData from "../../../service/trailsVideos.json";
+import trails from "../../../service/trailsAndGame.json";
 
 const buildVideoSrc = (rawLink) => {
     if (!rawLink) return null;
@@ -33,10 +33,9 @@ const buildVideoSrc = (rawLink) => {
 const WatchVideoTrailView = () => {
     
     const { id: idModulo, idVideo } = useParams();
-    const navigate = useNavigate();
 
-    const modulo = trailsVideosData.find(item => item.id === Number(idModulo));
-    const video = modulo?.videos?.[Number(idVideo) - 1];
+    const modulo = trails.find(item => item.id === Number(idModulo));
+    const video = modulo?.pairs?.find(v => v.id === Number(idVideo));
 
     const formattedId = Number(idVideo) < 10 ? `0${idVideo}` : idVideo;
 

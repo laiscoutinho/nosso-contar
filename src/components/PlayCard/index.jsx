@@ -1,19 +1,43 @@
 import React from "react";
+import Button from "../Button";
 
-export default function PlayCard({ title, text, icon, onClick }) {
-  return (
-    <div onClick={onClick} 
-          className="bg-(--white-soft) rounded-3xl shadow-md p-6 m-[15px] flex flex-col justify-between hover:shadow-lg transition-shadow duration-300 transform transition-all duration-300 hover:scale-105 cursor-pointer max-w-full sm:max-w-[320px] md:max-w-[360px] min-h-[180px]">
-      <div>
-        <h3 className="text-(--pink-strong) text-xl font-semibold mb-3">
-          {title}
-        </h3>
-        <p className="text-base font-medium">{text}</p>
-      </div>
+export default function PlayCard({ text, icon, onClick }) {
+    return (
+        <div 
+            className="
+                w-full
+                mion-w-[350px]
+                bg-(--white-soft)
+                rounded-3xl 
+                shadow-md 
+                p-5 
+                m-4 
+                flex 
+                items-center
+                justify-between
+                hover:shadow-lg 
+                transition-all 
+                duration-300 
+                hover:scale-[1.01]
+                cursor-pointer
+                min-h-[80px]
+            "
+        >
+            {/* Ícone + texto */}
+            <div className="flex items-center gap-4">
+                <div className="text-(--pink-strong) text-3xl flex items-center">
+                    {icon}
+                </div>
 
-      <div className="flex justify-end mt-4 text-(--pink-strong) text-2xl">
-        {icon}
-      </div>
-    </div>
-  );
+                <div className="flex flex-col">
+                    <p className="text-base font-medium">{text}</p>
+                </div>
+            </div>
+
+            {/* Botão */}
+            <Button  bgColor = "bg-(--pink-strong)" onClick={onClick} > 
+                Iniciar 
+            </Button>
+        </div>
+    );
 }
