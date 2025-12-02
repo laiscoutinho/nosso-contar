@@ -48,7 +48,7 @@ export default function GameCard({ logo, card, flipped, disabled, onClick }) {
     return (
         <div
             onClick={() => !disabled && onClick(card)}
-            className="w-[150px] h-[200px] sm:w-[170px] sm:h-[230px] md:w-[180px] md:h-[240px] perspective cursor-pointer"
+            className="w-[150px] h-[200px] sm:w-[170px] sm:h-[230px] md:w-[180px] md:h-60 perspective cursor-pointer"
         >
             <div className={`flip-container ${flipped ? "flip" : ""}`}>
 
@@ -62,7 +62,7 @@ export default function GameCard({ logo, card, flipped, disabled, onClick }) {
                     <img
                         src={logo}
                         alt="Logo"
-                        className="w-[80px] h-[80px] object-contain"
+                        className="w-20 h-20 object-contain"
                     />
                 </div>
 

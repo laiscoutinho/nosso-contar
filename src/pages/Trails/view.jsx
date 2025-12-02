@@ -8,7 +8,6 @@ import Logo from "../../assets/logo/logo_Nosso_Contar_wide.png";
 import TrilhasTitle from "../../assets/decor/trilhasTitle.png"
 import iconsHandTitle from "../../assets/decor/trilhasIconsHand.png";
 import trilhasSetas from "../../assets/decor/home/trilhasInicial.png";
-// import TitleEnding from "../../assets/decor/titleEnding.png";
 import TrilhasEnding from "../../assets/decor/trilhasEnding.svg"
 
 import WaveBackground from "../../components/WaveBackground/index";
