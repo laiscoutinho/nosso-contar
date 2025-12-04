@@ -49,7 +49,7 @@ const StoryCard = ({ id, title, description, image }) => {
             {/* Botão */}
             <div className="mt-6 z-10 flex justify-center w-full">
                 <Button
-                    onClick={() => navigate(`/trilhas/${id}`)}
+                    onClick={() => navigate(`/historias/${id}`)}
                     icon={<Play className="w-5 h-5 text-(--white-soft)" />}
                     bgColor="bg-(--pink-strong)"
                     animated={false}
