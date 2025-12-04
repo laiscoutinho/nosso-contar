@@ -1,5 +1,5 @@
 import React from "react";
-import TitleEnding from "../../assets/decor/titleEnding.png";
+import TitleEnding from "../../assets/decor/home/titleEnding.png";
 
 export default function EndingTitle() {
   return (
