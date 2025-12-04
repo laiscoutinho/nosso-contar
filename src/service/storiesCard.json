@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "titulo": "As Cores da Amizade",
+        "descricao": "A amizade transforma sentimentos em um arco-íris.",
+        "imagem": "coresDaAmizadeIcon.png"
+    },
+    {
+        "id": 2,
+        "titulo": "A Galinha que Queria Voar",
+        "descricao": "Dora descobre que ser ela mesma basta.",
+        "imagem": "galinhaIcon.png"
+    },
+    {
+        "id": 3,
+        "titulo": "A Casa das 7 Cores",
+        "descricao": "O amor repinta a casa e fortalece as cores.",
+        "imagem": "casaIcon.png"
+    },
+    {
+        "id": 4,
+        "titulo": "Os Patins da Minha Irmã",
+        "descricao": "Coragem nasce quando alguém segura nossa mão.",
+        "imagem": "patinsIcon.png"
+    }
+]
