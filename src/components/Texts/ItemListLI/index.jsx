@@ -23,9 +23,11 @@ const ItemListLI = ({ index, text, icon, className = "" }) => {
                     {text}
                 </p>
 
-                <span className="text-(--pink-strong) text-3xl shrink-0">
+                {icon && (
+                    <span className="text-(--pink-strong) text-3xl shrink-0">
                     {icon}
                 </span>
+                )}
             </div>
         </li>
     )

@@ -181,7 +181,7 @@ const TrailsView = () => {
 
                     <Button
                         onClick={() => navigate("/historias")}
-                        icon={<Hand className="w-4 sm:w-5 h-4 sm:h-5 text-(--white-soft)" />}
+                        icon={<Hand className="w-7 sm:w-5 h-4 sm:h-5 text-(--white-soft)" />}
                     >
                         Ver histórias
                     </Button>

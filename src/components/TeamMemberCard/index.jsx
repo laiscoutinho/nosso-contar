@@ -1,8 +1,17 @@
 import React from "react";
 
 export default function TeamMemberCard({ avatar, name, role, onClick }) {
+
+    const handleClick = () => {
+        if (typeof onClick === "string") {
+            window.open(onClick, "_blank");
+        } else if (typeof onClick === "function") {
+            onClick();
+        }
+    };
+    
     return (
-        <div onClick={onClick} 
+        <div onClick={handleClick} 
             className="relative border-2 border-(--pink-light) rounded-3xl shadow-md overflow-hidden w-[225px] md:w-[235px] lg:w-[325px]">
             <div className="absolute inset-0 shadow-[inset_0_3px_15px_var(--blue-light)] pointer-events-none rounded-xl"></div>
 

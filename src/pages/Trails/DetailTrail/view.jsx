@@ -8,6 +8,7 @@ import Button from '../../../components/Button/index';
 import WaveBackground from "../../../components/WaveBackground/index";
 import PlayCard from '../../../components/PlayCard/index';
 import EndingTitle from "../../../components/EndingTitle/index";
+import ItemListLI from '../../../components/Texts/ItemListLI';
 
 import trails from "../../../service/trailsAndGame.json";
 
@@ -74,7 +75,11 @@ const DetailTrailView = () => {
                         {/* Lista */}
                         <ul className="list-disc pl-6 text-base sm:text-xl md:text-2xl text-gray-800 font-medium">
                             {trail.conteudo?.map((topic, index) => (
-                                <li key={index}>{topic}</li>
+                                <ItemListLI
+                                    key={index}
+                                    index={index}
+                                    text={topic}
+                                />
                             ))}
                         </ul>
                     </div>

@@ -76,6 +76,7 @@ export default function GameCard({ logo, card, flipped, disabled, onClick }) {
                     {/* IMAGEM */}
                     {flipped && card.type === "image" && (
                         <img
+                            key={card.link}
                             src={mediaSrc}
                             alt={card.title}
                             className="w-full h-[150px] object-contain rounded-md"
@@ -86,20 +87,24 @@ export default function GameCard({ logo, card, flipped, disabled, onClick }) {
                     {flipped && card.type === "video" && (
                         <>
                             {isIframe ? (
-                                <iframe
-                                    src={mediaSrc}
-                                    title={card.title}
-                                    className="w-full h-[150px] rounded-md"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
-                                    allowFullScreen
-                                />
+                                <div className="relative w-full h-[150px] overflow-hidden rounded-md">
+                                    <iframe
+                                        key={card.link}
+                                        src={mediaSrc}
+                                        title={card.title}
+                                        className="w-full h-[150px] rounded-md"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+                                        allowFullScreen
+                                    />
+                                </div>
                             ) : (
                                 <video
+                                    key={card.link}
                                     src={mediaSrc}
                                     autoPlay
                                     muted
                                     loop
-                                    className="w-full h-[150px] object-contain rounded-md"
+                                    className="w-full h-[150px] object-contain object-center rounded-md"
                                 />
                             )}
                         </>

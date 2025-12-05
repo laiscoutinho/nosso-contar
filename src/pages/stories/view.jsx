@@ -136,7 +136,7 @@ const StoriesViewPage = () => {
                 </div>
 
                 <Button
-                    onClick={() => navigate("/historias")}
+                    onClick={() => navigate("/jogodamemoria")}
                     icon={<Hand className="w-4 sm:w-5 h-4 sm:h-5 text-(--white-soft)" />}
                 >
                     Ver jogo
