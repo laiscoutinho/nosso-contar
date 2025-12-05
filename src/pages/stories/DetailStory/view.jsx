@@ -1,5 +1,8 @@
 import stories from "../../../service/storiesCard.json";
+import { Hand, Play } from "lucide-react"
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+
 
 import WaveBackground from "../../../components/WaveBackground/index";
 import EndingTitle from "../../../components/EndingTitle/index";
@@ -36,6 +39,45 @@ const StoryDetailView = () => {
 
     const story = stories.find(item => item.id === Number(id));
     const video = { link: story.linkVideo };
+    const legendas = story.legenda;
+
+    const playerRef = useRef(null);
+    const [currentTime, setCurrentTime] = useState(0);
+
+    useEffect(() => {
+        if (!video?.link || !buildVideoSrc(video.link)) return;
+
+        // só carrega o script 1 vez
+        if (!window.YT) {
+            const tag = document.createElement("script");
+            tag.src = "https://www.youtube.com/iframe_api";
+            document.body.appendChild(tag);
+        }
+
+        // API pronta → cria o player
+        window.onYouTubeIframeAPIReady = () => {
+            playerRef.current = new window.YT.Player("video-frame", {
+            events: {
+                onReady: () => {
+                // loop pegando tempo
+                const interval = setInterval(() => {
+                    if (playerRef.current?.getCurrentTime) {
+                    setCurrentTime(playerRef.current.getCurrentTime());
+                    }
+                }, 300);
+
+                // evita loop infinito caso o componente desmonte
+                return () => clearInterval(interval);
+                }
+            }
+            });
+        };
+    }, [video]);
+
+
+    const legendaAtual = legendas.find(
+        (l) => currentTime >= l.start && currentTime <= l.end
+    );
 
     return (
         <>
@@ -128,8 +170,8 @@ const StoryDetailView = () => {
                                         }
                                     `}
                                 >
-                                    <p className="text-base font-semibold text-(--dark)">
-
+                                    <p className="flex text-base font-semibold text-(--dark)">
+                                        <Play className="w-3 sm:w-4 h-3 sm:h-5 mr-2 mt-0.5 text-(--pink-strong)" />
                                         {item.titulo}
                                     </p>
 
@@ -151,20 +193,35 @@ const StoryDetailView = () => {
                             shadow-md
                             aspect-video
                             max-h-[800px]
+                            relative
                         "
-                    >
+                        >
                         {video?.link ? (
+                            <>
                             <iframe
+                                id="video-frame"
                                 className="w-full h-full"
-                                src={buildVideoSrc(video.link)}
-                                title={video?.title}
+                                src={`${buildVideoSrc(video.link)}?enablejsapi=1`}
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; picture-in-picture"
                                 allowFullScreen
                             ></iframe>
+
+                            {/* Legenda por cima */}
+                            {legendaAtual && (
+                                <div className="
+                                    absolute bottom-4 left-1/2 -translate-x-1/2
+                                    bg-black/60 text-white px-4 py-2
+                                    rounded-xl text-lg max-w-[80%] text-center
+                                ">
+                                    {legendaAtual.text}
+                                </div>
+                                )}
+
+                            </>
                         ) : (
                             <div className="w-full h-full flex items-center justify-center text-white">
-                                Vídeo não encontrado
+                            Vídeo não encontrado
                             </div>
                         )}
                     </div>
