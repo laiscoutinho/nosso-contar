@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "titulo": "As Cores da Amizade",
+        "descricao": "A amizade transforma sentimentos em um arco-íris.",
+        "imagem": "coresDaAmizadeIcon.png",
+        "duracao": "1:49",
+        "linkVideo": "https://youtu.be/yG1NbjTy5a0",
+        "legenda": [
+            { "start": 0.1, "end": 3.5 , "text": "As Cores da Amizade" },
+            { "start": 4, "end": 10, "text": "Havia uma menina chamada Clara," },
+            { "start": 10, "end": 14.5, "text": "Um dia, o professor trouxe" },
+            { "start": 14.5, "end": 18, "text": "uma caixa de tintas coloridas" },
+            { "start": 18, "end": 21, "text": "e pediu que cada aluno" },
+            { "start": 21, "end": 25, "text": "pintasse um sentimento." },
+            { "start": 24, "end": 32, "text": "Clara escolheu o amarelo" },
+            { "start": 32, "end": 34, "text": "para a alegria" },
+            { "start": 34, "end": 38, "text": "o azul para a paz" },
+            { "start": 38, "end": 40, "text": "e o vermelho para o amor." },
+            { "start": 40, "end": 50, "text": "Seu amigo Rafael, porém, escolheu o preto" },
+            { "start": 50, "end": 55, "text": "Ele disse que estava triste." },
+            { "start": 55, "end": 63, "text": "Clara olhou para ele e teve uma ideia." },
+            { "start": 64, "end": 67, "text": "Misturou o amarelo e o azul," },
+            { "start": 68, "end": 72, "text": "formando um verde de esperança" },
+            { "start": 73, "end": 80, "text": "Clara desenhou um arco-íris e escreveu:" },
+        { "start": 81, "end": 85, "text": "\"Amigos fazem o mundo colorido!\"" },
+            { "start": 86, "end": 95, "text": "Rafael sorriu e também começou a pintar." },
+            { "start": 95, "end": 100, "text": "O professor observou e disse:" },
+            { "start": 100, "end": 105, "text": "\"O melhor jeito de dizer que ama" },
+            { "start": 105, "end": 109, "text": "é com um gesto colorido.\"" }
+        ]
+    },
+    {
+        "id": 2,
+        "titulo": "A Galinha que Queria Voar",
+        "descricao": "Dora descobre que ser ela mesma basta.",
+        "imagem": "galinhaIcon.png",
+        "duracao": "1:30",
+        "linkVideo": "https://youtu.be/Q35nWL4Oz9g",
+        "legenda": [
+            { "start": 0.1, "end": 4 , "text": "A galinha que queria voar" },
+            { "start": 5, "end": 9, "text": "Na fazenda da colina," },
+            { "start": 10, "end": 18, "text": "a galinha Dora tinha um sonho:" },
+            { "start": 18, "end": 21, "text": "voar bem alto" },
+            { "start": 22, "end": 25, "text": "O galo ria:" },
+            { "start": 26, "end": 30, "text": "\"Galinhas não podem voar\"" },
+            { "start": 31, "end": 36, "text": "Mas Dora persistia." },
+            { "start": 37, "end": 40, "text": "Um dia, o pato disse:" },
+            { "start": 41, "end": 47, "text": "\"Tem que correr e bater as asas bem rápido\"" },
+            { "start": 47, "end": 55, "text": "Dora tentou, tentou, mas não conseguiu..." },
+            { "start": 55, "end": 60, "text": "O coelho sorriu:" },
+            { "start": 61, "end": 63, "text": "\"Você não precisa voar.\"" },
+            { "start": 64, "end": 68, "text": "\"Você já é especial.\"" },
+            { "start": 71, "end": 80, "text": "Dora pensou e abriu um sorriso" },
+            { "start": 81, "end": 89, "text": "Talvez o mundo no chão também fosse bonito" }
+        ]
+    },
+    {
+        "id": 3,
+        "titulo": "A Casa das 7 Cores",
+        "descricao": "O amor repinta a casa e fortalece as cores.",
+        "imagem": "casaIcon.png",
+        "duracao": "1:07",
+        "linkVideo": "https://youtu.be/WnuLTrK_mws",
+        "legenda": [
+            { "start": 0.1, "end": 3 , "text": "A Casa das Sete Cores" },
+            { "start": 4, "end": 7, "text": "No alto de uma colina " },
+            { "start": 7, "end": 10, "text": "tem uma casa das 7 cores" },
+            { "start": 11, "end": 17, "text": "Cada parede tinha um sentimento." },
+            { "start": 18, "end": 20, "text": "A amarela, a alegria." },
+            { "start": 21, "end": 24, "text": "A vermelha, amor." },
+            { "start": 24, "end": 28, "text": "A azul, a paz." },
+            { "start": 29, "end": 31, "text": "A verde. esperança." },
+            { "start": 32, "end": 35, "text": "A roxa, a sabedoria" },
+            { "start": 36, "end": 41, "text": "A laranja, a energia do vovô." },
+            { "start": 41, "end": 45, "text": "A branca, o abraço da família." },
+            { "start": 45, "end": 49, "text": "Um dia, a chuva cinza" },
+            { "start": 49, "end": 51, "text": "acabou com as cores." },
+            { "start": 52, "end": 53.5, "text": "A família se reuniu," },
+            { "start": 53.5, "end": 59, "text": "pintou tudo e cantou reunida." },
+            { "start": 60, "end": 66, "text": "As cores voltaram mais fortes." }
+        ]
+    },
+    {
+        "id": 4,
+        "titulo": "Os Patins da Minha Irmã",
+        "descricao": "Coragem nasce quando alguém segura nossa mão.",
+        "imagem": "patinsIcon.png",
+        "duracao": "0:59",
+        "linkVideo": "https://youtu.be/7MtLAlu_XMA",
+        "legenda": [
+            { "start": 0.1, "end": 5 , "text": "Os Patins da Minha Irmã" },
+            { "start": 5, "end": 13, "text": "Minha irmã ganhou patins novos." },
+            { "start": 13, "end": 23, "text": "Eu queria muito brincar, mas senti medo." },
+            { "start": 24, "end": 30, "text": "Ela segurou minhas mãos e disse:" },
+            { "start": 30, "end": 34, "text": "\"Vamos devagar\"" },
+            { "start": 37, "end": 45, "text": "Eu senti medo, mas depois fiquei feliz." },
+            { "start": 46, "end": 57, "text": "Minha mãe olhou emocionada e nos abraçou." }
+        ]
+    }
+]
