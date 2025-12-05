@@ -60,8 +60,26 @@
         "titulo": "A Casa das 7 Cores",
         "descricao": "O amor repinta a casa e fortalece as cores.",
         "imagem": "casaIcon.png",
-        "duracao": "1:50",
-        "linkVideo": "https://www.youtube.com/watch?v=example4"
+        "duracao": "1:07",
+        "linkVideo": "https://youtu.be/WnuLTrK_mws",
+        "legenda": [
+            { "start": 0.1, "end": 3 , "text": "A Casa das Sete Cores" },
+            { "start": 4, "end": 7, "text": "No alto de uma colina " },
+            { "start": 7, "end": 10, "text": "tem uma casa das 7 cores" },
+            { "start": 11, "end": 17, "text": "Cada parede tinha um sentimento." },
+            { "start": 18, "end": 20, "text": "A amarela, a alegria." },
+            { "start": 21, "end": 24, "text": "A vermelha, amor." },
+            { "start": 24, "end": 28, "text": "A azul, a paz." },
+            { "start": 29, "end": 31, "text": "A verde. esperança." },
+            { "start": 32, "end": 35, "text": "A roxa, a sabedoria" },
+            { "start": 36, "end": 41, "text": "A laranja, a energia do vovô." },
+            { "start": 41, "end": 45, "text": "A branca, o abraço da família." },
+            { "start": 45, "end": 49, "text": "Um dia, a chuva cinza" },
+            { "start": 49, "end": 51, "text": "acabou com as cores." },
+            { "start": 52, "end": 53.5, "text": "A família se reuniu," },
+            { "start": 53.5, "end": 59, "text": "pintou tudo e cantou reunida." },
+            { "start": 60, "end": 66, "text": "As cores voltaram mais fortes." }
+        ]
     },
     {
         "id": 4,

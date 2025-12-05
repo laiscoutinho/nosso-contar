@@ -13,5 +13,5 @@ export const publicRoutes = [
     { path: '/trilhas/:id/video/:idVideo', element: <WatchVideoTrailView /> },
     { path: '/historias', element: <StoriesViewPage />, title: 'Histórias'},
     { path: '/historias/:id', element: <StoryDetailView /> },
-    { path: '/jogodamemoria', element: <MemoryGameView />, title: 'Jogo da Memória'}
+    //{ path: '/jogodamemoria', element: <MemoryGameView />, title: 'Jogo da Memória'}
 ];
