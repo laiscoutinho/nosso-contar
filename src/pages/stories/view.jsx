@@ -25,13 +25,13 @@ const StoriesViewPage = () => {
                     overflow-hidden
                 ">
             <div className=" w-full flex items-start space-between gap-6 md:gap-12 flex-nowrap">
-                <div className='flex w-full flex-col lg:flex-row lg:justify-between gap-4 lg:gap-0'>
+                <div className='flex flex-col lg:flex-row gap-4'>
                     {/* Título */}
                     <img
                         src={StoriesTitle}
                         alt="Logo"
                         className="
-                                max-h-20 sm:max-h-40 lg:max-h-20 inline-block -translate-y-1 select-none"
+                                max-h-8 sm:max-h-13 lg:max-h-14 inline-block -translate-y-1 select-none"
                     />
 
                     {/* Ícones */}
@@ -40,8 +40,8 @@ const StoriesViewPage = () => {
                         alt="Ícones"
                         className="
                             hidden lg:block
-                            max-w-[260px]
-                            h-auto 
+                            max-w-[150px]
+                            w-full h-auto 
                             select-none
                         "
                     />
@@ -77,8 +77,8 @@ const StoriesViewPage = () => {
                         alt="Ilustração"
                         className="
                             w-full 
-                            max-w-[500px] sm:max-w-[400px]
-                            min-w-[400px]
+                            max-w-[400px] sm:max-w-[500px]
+                            min-w-[300px]
                             object-contain select-none
                         "
                     />
